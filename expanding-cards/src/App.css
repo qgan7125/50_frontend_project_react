@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --color-title: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Muli", sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.expandingCards__container {
+  display: flex;
+  width: 80vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expandingCards__cards {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 40px;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  color: var(--color-title);
+  -webkit-transition: all 700ms ease-in;
+}
+
+.expandingCards__cards h3 {
+  position: absolute;
+  bottom: -5px;
+  left: 15px;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.expandingCards__cards.active {
+  flex: 5;
+}
+
+.expandingCards__cards.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+  color: "red";
 }

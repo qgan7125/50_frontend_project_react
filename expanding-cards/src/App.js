@@ -1,11 +1,7 @@
-import './App.css';
+import ExpandingCards from "./components/expandingCards";
+import data from "./data.json";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      Hello World!
-    </div>
-  );
+export default function App() {
+  return <ExpandingCards data={data} />;
 }
-
-export default App;
