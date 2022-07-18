@@ -4,5 +4,5 @@
 ## Contents
 | # | Project | 
 | ------------- | ------------- |
-| 1 | [Expanding Cards](./expanding-cards/) |
+| 1 | [Expanding Cards](./src/components/01-expanding-cards/) |
 | 2 | Progress Steps  |

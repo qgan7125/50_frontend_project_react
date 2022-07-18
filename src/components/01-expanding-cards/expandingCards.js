@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import data from './data.json';
+import "./expandingCards.css";
 
 const ExpandingCards = (props) => {
-  const { data } = props;
   const [expaneded, setExpaneded] = useState(data.data[0].label);
 
   const handleClick = (e) => {
