@@ -1,7 +1,3 @@
-:root {
-    --color-title: #fff;
-}
-
 .expandingCards__container {
     display: flex;
     width: 80vw;
@@ -17,7 +13,7 @@
     flex: 0.5;
     margin: 10px;
     position: relative;
-    color: var(--color-title);
+    color: var(--color-white);
     -webkit-transition: all 700ms ease-in;
 }
 
