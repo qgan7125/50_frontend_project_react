@@ -1,0 +1,51 @@
+.hidden__container {
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__container {
+    position: relative;
+}
+
+.input__container input {
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    transition: width 0.3s ease;
+}
+
+.input__container input:focus {
+    outline: none;
+}
+
+.input__container input:hover {
+    outline: none;
+}
+
+.btn_hidden--search {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+  }
+
+  .input__container.active input{
+    width: 200px;
+  }
+
+  .input__container.active .btn_hidden--search{
+    transform: translateX(198px);
+  }
+  
