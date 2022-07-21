@@ -11,3 +11,5 @@
 | 5 | [Blurry Loading](./src/components/05-blurry-loading/)  |
 | 6 | [Scroll Animation](./src/components/06-scroll-animation/)  |
 | 7 | [Splite Landing Page](./src/components/07-split-landing-page/)  |
+| 8 | [Form Wave](./src/components/08-form-wave/)  |
+| 9 | [Sound Board](./src/components/09-sound-board/)  |
