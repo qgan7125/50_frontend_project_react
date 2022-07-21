@@ -15,3 +15,4 @@
 | 9 | [Sound Board](./src/components/09-sound-board/)  |
 | 10 | [Dad Joke](./src/components/10-dad-joke/)  |
 | 11 | [Event KeyCode](./src/components/11-event-keycode/)  |
+| 12 | [Faq Collapse](./src/components/12-faq-collapse/)  |

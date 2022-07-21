@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "quesiton": "Why shouldn't we trust atoms?",
+            "answer": "They make up everything"
+        },
+        {
+            "quesiton": "What do you call someone with no body and no nose?",
+            "answer": "Nobody knows."
+        },
+        {
+            "quesiton": "What's the object-oriented way to become wealthy?",
+            "answer": "Inheritance."
+        },
+        {
+            "quesiton": "How many tickles does it take to tickle an octopus?",
+            "answer": "Ten-tickles!"
+        },
+        {
+            "quesiton": "What is: 1 + 1?",
+            "answer": "Depends on who are you asking."
+        }
+    ]
+}

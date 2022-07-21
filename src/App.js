@@ -3,7 +3,8 @@ import 'App.css';
 // import FormWave from 'components/08-form-wave/formWave';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
 // import DadJoke from 'components/10-dad-joke/dadJoke';
-import EventkeyCode from 'components/11-event-keycode/eventKeycode';
+// import EventkeyCode from 'components/11-event-keycode/eventKeycode';
+import FaqCollapse from 'components/12-faq-collapse/faqCollapse';
 // import HiddenSearch from 'components/04-hidden-search/hiddenSearch';
 // import BlurryLoading from 'components/05-blurry-loading/blurryLoading';
 // import SplitLandingPage from 'components/07-split-landing-page/splitLandingPage';
@@ -22,7 +23,8 @@ function App() {
     // <ScrollAnimation />
     // <SoundBoard />
     // <DadJoke />
-    <EventkeyCode />
+    // <EventkeyCode />
+    <FaqCollapse />
   );
 }
 
