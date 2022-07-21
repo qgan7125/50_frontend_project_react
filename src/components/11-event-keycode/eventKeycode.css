@@ -1,0 +1,24 @@
+.eventKeycode__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventKeycode__container .box {
+    border: 1px solid black;
+    padding: 20px 30px;
+    font-size: 24px;
+    background-color: var(--color-white);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    min-width: 150px;
+}
+
+.eventKeycode__event {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
