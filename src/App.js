@@ -1,7 +1,8 @@
 import 'App.css';
 // import ScrollAnimation from 'components/06-scroll-animation/scrollAnimation';
 // import FormWave from 'components/08-form-wave/formWave';
-import SoundBoard from 'components/09-sound-board/soundBoard';
+// import SoundBoard from 'components/09-sound-board/soundBoard';
+import DadJoke from 'components/10-dad-joke/dadJoke';
 // import HiddenSearch from 'components/04-hidden-search/hiddenSearch';
 // import BlurryLoading from 'components/05-blurry-loading/blurryLoading';
 // import SplitLandingPage from 'components/07-split-landing-page/splitLandingPage';
@@ -18,7 +19,8 @@ function App() {
     // <BlurryLoading />
     // <SplitLandingPage />
     // <ScrollAnimation />
-    <SoundBoard />
+    // <SoundBoard />
+    <DadJoke />
   );
 }
 

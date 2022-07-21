@@ -36,7 +36,7 @@ const FormWave = () => {
                     }</label>
                 </div>
                 <button>Login</button>
-                <div>Don't have an account? <a>Register</a></div>
+                <div>Don't have an account? <a href='/#'>Register</a></div>
             </form>
         </div>
     )

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.dadJoke__container {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #686de0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dadJoke__content {
+    width: 800px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dadJoke__content h3 {
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.dadJoke__content .Joke {
+    padding: 20px 0 50px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+.dadJoke__content button {
+    background-color: #9f68e0;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 14px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.dadJoke__content button:active {
+    transform: scale(0.98);
+}
+
+@media only screen and (max-width: 800px) {
+    .dadJoke__content {
+      width: 600px;
+    }
+  }
