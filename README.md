@@ -9,3 +9,5 @@
 | 3 | [Rotation navigation animation](./src/components/03-rotation-navigation-animation/)  |
 | 4 | [Hidden Search](./src/components/04-hidden-search/)  |
 | 5 | [Blurry Loading](./src/components/05-blurry-loading/)  |
+| 6 | [Scroll Animation](./src/components/06-scroll-animation/)  |
+| 7 | [Splite Landing Page](./src/components/07-split-landing-page/)  |

@@ -1,0 +1,97 @@
+:root {
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-btn-hover-color: rgba(87, 84, 236, 1);
+    --right-btn-hover-color: rgba(28, 122, 28, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+}
+
+h2 {
+    font-size: 80px;
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+button {
+    position: absolute;
+    border: 4px solid var(--color-white);
+    background-color: transparent;
+    color: var(--color-white);
+    width: 250px;
+    height: 80px;
+    font-size: 25px;
+}
+
+#ps5 button:hover {
+    border: none;
+    background-color: var(--left-btn-hover-color);
+}
+
+#xbox button:hover {
+    border: none;
+    background-color: var(--right-btn-hover-color);
+}
+
+.splitLanding__container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.splitLanding__container div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 100vh;
+    color: var(--color-white);
+    transition: all var(--speed) ease-in-out;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.splitLanding__container #ps5 {
+    background-image: url(./ps.jpeg);
+}
+
+.splitLanding__container #ps5::before {
+    content: " ";
+    width: 100%;
+    height: 100vh;
+    background-color: var(--left-bg-color)
+}
+
+
+.splitLanding__container #ps5.active {
+    width: var(--hover-width);
+}
+
+.splitLanding__container #ps5.inactive {
+    width: var(--other-width);
+}
+
+.splitLanding__container #xbox.active {
+    width: var(--hover-width);
+}
+
+.splitLanding__container #xbox.inactive {
+    width: var(--other-width);
+}
+
+.splitLanding__container #xbox {
+    background-image: url(./xbox.jpeg);
+}
+
+.splitLanding__container #xbox::before {
+    content: " ";
+    width: 100%;
+    height: 100vh;
+    background-color: var(--right-bg-color)
+}
