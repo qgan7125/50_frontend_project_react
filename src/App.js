@@ -4,7 +4,8 @@ import 'App.css';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
 // import DadJoke from 'components/10-dad-joke/dadJoke';
 // import EventkeyCode from 'components/11-event-keycode/eventKeycode';
-import FaqCollapse from 'components/12-faq-collapse/faqCollapse';
+// import FaqCollapse from 'components/12-faq-collapse/faqCollapse';
+import RandomChoicePicker from 'components/13-random-choice-picker/randomChoicePicker';
 // import HiddenSearch from 'components/04-hidden-search/hiddenSearch';
 // import BlurryLoading from 'components/05-blurry-loading/blurryLoading';
 // import SplitLandingPage from 'components/07-split-landing-page/splitLandingPage';
@@ -24,7 +25,8 @@ function App() {
     // <SoundBoard />
     // <DadJoke />
     // <EventkeyCode />
-    <FaqCollapse />
+    // <FaqCollapse />
+    <RandomChoicePicker />
   );
 }
 

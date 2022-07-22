@@ -1,0 +1,48 @@
+.randomChoicePicker__container {
+    background-color: #2b88f0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.randomChoicePicker__container textarea {
+    width: 500px;
+    height: 100px;
+    padding: 15px;
+    font-size: 1.25em;
+    border-radius: 5px;
+}
+
+.randomChoicePicker__container textarea:focus {
+    outline: 1px solid var(--color-white);
+    outline-offset: 2px;
+}
+
+.randomChoicePicker__container .choices {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.randomChoicePicker__container .choice {
+    border-radius: 50px;
+    height: 40px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0932b;
+    color: var(--color-white);
+    margin-top: 20px;
+}
+
+.randomChoicePicker__container .choice.highlight {
+    background-color: #273c75;
+}
