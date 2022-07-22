@@ -1,0 +1,82 @@
+:root {
+    --drinkWater-border-color: #144fc6;
+    --drinkWater-fill-color: #6ab3f8;
+    --drinkWater-background-color: #3494e4;
+}
+
+.drinkWater__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--drinkWater-background-color);
+    color: var(--color-white);
+}
+
+.drinkWater__container h1 {
+    margin-bottom: 0;
+}
+
+.drinkWater__container .bottle {
+    border: 4px solid var(--drinkWater-border-color);
+    border-radius: 0 0 30px 30px;
+    color: var(--drinkWater-border-color);
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drinkWater__container .bottle.large {
+    width: 150px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.drinkWater__container .bottle.small {
+    width: 55px;
+    height: 90px;
+    border-radius: 0 0 15px 15px;
+}
+
+.drinkWater__container .bottle.active {
+    background-color: var(--drinkWater-fill-color);
+    color: var(--color-white);
+}
+
+.drinkWater__container .bottles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 280px;
+    justify-content: center;
+}
+
+.drinkWater__container .remained {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.drinkWater__container .percentage {
+    background-color: var(--drinkWater-fill-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s ease;
+    height: 0;
+    overflow: hidden;
+    font-size: 30px;
+}
