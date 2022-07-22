@@ -1,4 +1,5 @@
 import 'App.css';
+import IncrementCounter from 'components/15-increment-counter/incrementCounter';
 // import ScrollAnimation from 'components/06-scroll-animation/scrollAnimation';
 // import FormWave from 'components/08-form-wave/formWave';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
@@ -7,7 +8,7 @@ import 'App.css';
 // import FaqCollapse from 'components/12-faq-collapse/faqCollapse';
 // import RandomChoicePicker from 'components/13-random-choice-picker/randomChoicePicker';
 // import AnimatedNavigation from 'components/14-animated-navigation/animatedNavigation';
-import DrinkWater from 'components/15-drink-water/drinkWater';
+// import DrinkWater from 'components/16-drink-water/drinkWater';
 // import HiddenSearch from 'components/04-hidden-search/hiddenSearch';
 // import BlurryLoading from 'components/05-blurry-loading/blurryLoading';
 // import SplitLandingPage from 'components/07-split-landing-page/splitLandingPage';
@@ -30,7 +31,8 @@ function App() {
     // <FaqCollapse />
     // <RandomChoicePicker />
     // <AnimatedNavigation />
-    <DrinkWater />
+    // <DrinkWater />
+    <IncrementCounter />
   );
 }
 

@@ -1,0 +1,24 @@
+.incrementCounter__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8e44ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    gap: 100px;
+}
+
+.incrementCounter__content {
+    text-align: center;
+}
+
+.incrementCounter__content .counter {
+    font-size: 40px;
+}
+
+@media (max-width: 580px) {
+    .incrementCounter__container {
+      flex-direction: column;
+    }
+  }
