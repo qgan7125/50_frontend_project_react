@@ -1,5 +1,6 @@
 import 'App.css';
-import IncrementCounter from 'components/15-increment-counter/incrementCounter';
+// import IncrementCounter from 'components/15-increment-counter/incrementCounter';
+import MovieApp from 'components/17-movie-app/movieApp';
 // import ScrollAnimation from 'components/06-scroll-animation/scrollAnimation';
 // import FormWave from 'components/08-form-wave/formWave';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
@@ -32,7 +33,8 @@ function App() {
     // <RandomChoicePicker />
     // <AnimatedNavigation />
     // <DrinkWater />
-    <IncrementCounter />
+    // <IncrementCounter />
+    <MovieApp />
   );
 }
 

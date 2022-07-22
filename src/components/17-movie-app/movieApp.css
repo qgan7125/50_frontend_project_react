@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+
+.movieApp__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+
+.movieApp__container .nav {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+}
+
+.movieApp__container .nav input {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--color-white);
+}
+
+.movieApp__container .nav input::placeholder {
+    color: #7378c5;
+}
+
+.movieApp__container .nav input:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+.movieApp__contents {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    gap: 24px;
+}
