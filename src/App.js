@@ -5,7 +5,8 @@ import 'App.css';
 // import DadJoke from 'components/10-dad-joke/dadJoke';
 // import EventkeyCode from 'components/11-event-keycode/eventKeycode';
 // import FaqCollapse from 'components/12-faq-collapse/faqCollapse';
-import RandomChoicePicker from 'components/13-random-choice-picker/randomChoicePicker';
+// import RandomChoicePicker from 'components/13-random-choice-picker/randomChoicePicker';
+import AnimatedNavigation from 'components/14-animated-navigation/animatedNavigation';
 // import HiddenSearch from 'components/04-hidden-search/hiddenSearch';
 // import BlurryLoading from 'components/05-blurry-loading/blurryLoading';
 // import SplitLandingPage from 'components/07-split-landing-page/splitLandingPage';
@@ -26,7 +27,8 @@ function App() {
     // <DadJoke />
     // <EventkeyCode />
     // <FaqCollapse />
-    <RandomChoicePicker />
+    // <RandomChoicePicker />
+    <AnimatedNavigation />
   );
 }
 

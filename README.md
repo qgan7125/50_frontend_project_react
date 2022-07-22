@@ -16,3 +16,5 @@
 | 10 | [Dad Joke](./src/components/10-dad-joke/)  |
 | 11 | [Event KeyCode](./src/components/11-event-keycode/)  |
 | 12 | [Faq Collapse](./src/components/12-faq-collapse/)  |
+| 13 | [Random Choice Picker](./src/components/13-random-choice-picker/)  |
+| 14 | [Animated Navigation](./src/components/14-animated-navigation/)  |
