@@ -22,3 +22,5 @@
 | 16 | [Drink Water](./src/components/16-drink-water/)  |
 | 17 | [Moive App](./src/components/17-movie-app/)  |
 | 18 | [Background Slider](./src/components/18-background-slider/)  |
+| 19 | [Theme Clock](./src/components/19-theme-clock/)  |
+| 20 | [Button Ripple Effect](./src/components/20-button-ripple-effect/)  |
