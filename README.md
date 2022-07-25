@@ -21,3 +21,4 @@
 | 15 | [Increment Counter](./src/components/15-increment-counter/)  |
 | 16 | [Drink Water](./src/components/16-drink-water/)  |
 | 17 | [Moive App](./src/components/17-movie-app/)  |
+| 18 | [Background Slider](./src/components/18-background-slider/)  |
