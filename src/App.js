@@ -1,7 +1,8 @@
 import 'App.css';
 // import IncrementCounter from 'components/15-increment-counter/incrementCounter';
 // import MovieApp from 'components/17-movie-app/movieApp';
-import BackgroundSlider from 'components/18-background-slider/backgroundSlider';
+// import BackgroundSlider from 'components/18-background-slider/backgroundSlider';
+import ThemeClock from 'components/19-theme-clock/themeClock';
 // import ScrollAnimation from 'components/06-scroll-animation/scrollAnimation';
 // import FormWave from 'components/08-form-wave/formWave';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
@@ -36,7 +37,8 @@ function App() {
     // <DrinkWater />
     // <IncrementCounter />
     // <MovieApp />
-    <BackgroundSlider />
+    // <BackgroundSlider />
+    <ThemeClock />
   );
 }
 
