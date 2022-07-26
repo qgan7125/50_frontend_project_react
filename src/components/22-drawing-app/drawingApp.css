@@ -1,0 +1,46 @@
+.drawingApp__container {
+    background-color: var(--color-white);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drawingApp__canvas--container {
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawingApp__canvas--container canvas {
+    border: 2px solid steelblue;
+    background-color: var(--color-white);
+}
+
+.drawingApp__tools {
+    display: flex;
+    padding: 1rem;
+}
+
+.drawingApp__tools > * {
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .drawingApp__tools > *:last-child {
+    margin-left: auto;
+    font-size: 55px;
+  }
