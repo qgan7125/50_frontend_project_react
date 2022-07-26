@@ -26,3 +26,4 @@
 | 20 | [Button Ripple Effect](./src/components/20-button-ripple-effect/)  |
 | 21 | [Drag N Drop](./src/components/21-drag-n-drop/)  |
 | 22 | [Drawing App](./src/components/22-drawing-app/)  |
+| 23 | [Kinetic Loader](./src/components/23-kinetic-loader/)  |
