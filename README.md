@@ -30,3 +30,4 @@
 | 24 | [Content Placeholder](./src/components/24-content-placeholder/)  |
 | 25 | [Sticky Navigation](./src/components/25-sticky-navigation/)  |
 | 26 | [Double Veritical Slider](./src/components/26-double-vertical-slider/)  |
+| 27 | [Toast Notification](./src/components/27-toast-notification/)  |

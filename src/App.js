@@ -9,7 +9,8 @@ import 'App.css';
 // import KineticLoader from 'components/23-kinetic-loader/kineticLoader';
 // import ContentPlaceholder from 'components/24-content-placeholder/contentPlaceholder';
 // import StickyNavigation from 'components/25-sticky-navigation/stickyNavigation';
-import DoubleVerticalSlider from 'components/26-double-vertical-slider/doubleVerticalSlider';
+// import DoubleVerticalSlider from 'components/26-double-vertical-slider/doubleVerticalSlider';
+import ToastNotification from 'components/27-toast-notification/toastNotification';
 // import ScrollAnimation from 'components/06-scroll-animation/scrollAnimation';
 // import FormWave from 'components/08-form-wave/formWave';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
@@ -52,7 +53,8 @@ function App() {
     // <KineticLoader />
     // <ContentPlaceholder />
     // <StickyNavigation />
-    <DoubleVerticalSlider />
+    // <DoubleVerticalSlider />
+    <ToastNotification />
   );
 }
 
