@@ -28,3 +28,4 @@
 | 22 | [Drawing App](./src/components/22-drawing-app/)  |
 | 23 | [Kinetic Loader](./src/components/23-kinetic-loader/)  |
 | 24 | [Content Placeholder](./src/components/24-content-placeholder/)  |
+| 25 | [Sticky Navigation](./src/components/25-sticky-navigation/)  |

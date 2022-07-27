@@ -7,7 +7,8 @@ import 'App.css';
 // import DragNdrap from 'components/21-drag-n-drop/dragNdrop';
 // import DrawingApp from 'components/22-drawing-app/drawingApp';
 // import KineticLoader from 'components/23-kinetic-loader/kineticLoader';
-import ContentPlaceholder from 'components/24-content-placeholder/contentPlaceholder';
+// import ContentPlaceholder from 'components/24-content-placeholder/contentPlaceholder';
+import StickyNavigation from 'components/25-sticky-navigation/stickyNavigation';
 // import ScrollAnimation from 'components/06-scroll-animation/scrollAnimation';
 // import FormWave from 'components/08-form-wave/formWave';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
@@ -48,7 +49,8 @@ function App() {
     // <DragNdrap />
     // <DrawingApp />
     // <KineticLoader />
-    <ContentPlaceholder />
+    // <ContentPlaceholder />
+    <StickyNavigation />
   );
 }
 
