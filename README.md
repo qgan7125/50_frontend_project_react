@@ -32,3 +32,4 @@
 | 26 | [Double Veritical Slider](./src/components/26-double-vertical-slider/)  |
 | 27 | [Toast Notification](./src/components/27-toast-notification/)  |
 | 28 | [Github Profile](./src/components/28-github-profile/)  |
+| 29 | [Double Click Heart](./src/components/29-double-click-heart/)  |

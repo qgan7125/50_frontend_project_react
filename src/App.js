@@ -11,7 +11,8 @@ import 'App.css';
 // import StickyNavigation from 'components/25-sticky-navigation/stickyNavigation';
 // import DoubleVerticalSlider from 'components/26-double-vertical-slider/doubleVerticalSlider';
 // import ToastNotification from 'components/27-toast-notification/toastNotification';
-import GithubProfile from 'components/28-github-profile/githubProgile';
+// import GithubProfile from 'components/28-github-profile/githubProgile';
+import DoubleClickHeart from 'components/29-double-click-heart/doubleClickHeart';
 // import ScrollAnimation from 'components/06-scroll-animation/scrollAnimation';
 // import FormWave from 'components/08-form-wave/formWave';
 // import SoundBoard from 'components/09-sound-board/soundBoard';
@@ -56,7 +57,8 @@ function App() {
     // <StickyNavigation />
     // <DoubleVerticalSlider />
     // <ToastNotification />
-    <GithubProfile />
+    // <GithubProfile />
+    <DoubleClickHeart />
   );
 }
 
