@@ -1,3 +1,4 @@
+
 @use "./scss/reset";
 @use "./scss/fontfamily";
 @use "./scss/variables";
@@ -19,6 +20,11 @@
 @use "./components/01-expanding-cards/expandingCards";
 @use "./components/02-progress-step/progressStep";
 @use "./components/03-rotation-navigation-animation/rotationNavAnimation";
+@use "./components/04-hidden-search/hiddenSearch";
+
+
+// Import fa css
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
 html,
 body {

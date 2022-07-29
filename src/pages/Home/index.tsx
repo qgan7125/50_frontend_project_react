@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import Project from './project';
 import projectData from '../../projects.json';
 
-const Home = () => {
+const Home:FC = () => {
     return (
         <div>
             <main>

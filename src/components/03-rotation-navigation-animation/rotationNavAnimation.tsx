@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
-const RotationNavAnimation = () => {
+const RotationNavAnimation: FC = () => {
     const [toggle, setToggle] = useState(false);
 
     const handleClick = () => {
@@ -36,9 +36,9 @@ const RotationNavAnimation = () => {
             </div>
             <nav className={toggle ? "show-nav" : ""}>
                 <ul>
-                    <li><a href="/03RotationNavAnimation"><i class="fas fa-home"></i> HOME</a></li>
-                    <li className={toggle ? "show-nav" : ""}><a href="/03RotationNavAnimation"><i class="fas fa-user-alt"></i> ABOUT</a></li>
-                    <li className={toggle ? "show-nav" : ""}><a href="/03RotationNavAnimation"><i class="fas fa-envelope"></i> CONTACT</a></li>
+                    <li><a href="/03RotationNavAnimation"><i className="fas fa-home"></i> HOME</a></li>
+                    <li className={toggle ? "show-nav" : ""}><a href="/03RotationNavAnimation"><i className="fas fa-user-alt"></i> ABOUT</a></li>
+                    <li className={toggle ? "show-nav" : ""}><a href="/03RotationNavAnimation"><i className="fas fa-envelope"></i> CONTACT</a></li>
                 </ul>
             </nav>
         </div>

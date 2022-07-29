@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import data from './data.json';
 
-const ExpandingCards = () => {
+const ExpandingCards: FC = () => {
   const [expaneded, setExpaneded] = useState(data.data[0].label);
 
   const handleClick = (e) => {

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project box test cases snapshot test for Project box 1`] = `
+<DocumentFragment>
+  <div
+    class="project__container"
+    data-testid="project_container"
+    style="background-image: url(/assests/01ExpandingCards.png);"
+  >
+    <div
+      class="day"
+    >
+      Day 1
+    </div>
+    <div
+      class="project__info"
+    >
+      <h2>
+        Expanding Cards
+      </h2>
+      <button>
+        <a
+          href="/01ExpandingCards"
+        >
+          Live Demo
+        </a>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

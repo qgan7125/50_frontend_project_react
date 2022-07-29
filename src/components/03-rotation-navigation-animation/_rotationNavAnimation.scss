@@ -1,5 +1,7 @@
+@use "../../scss/variables";
+
 .nav__container {
-    background-color: #333;
+    background-color: variables.$color-dark;
     font-family: 'Lato', sans-serif;
     position: relative;
     overflow: hidden;
@@ -7,7 +9,7 @@
 }
 
 .container {
-    background-color: #fafafa;
+    background-color: variables.$color-light;
     width: 100vw;
     min-height: 90vh;
     padding: 50px;
@@ -41,16 +43,17 @@
 .nav__Circle button {
     cursor: pointer;
     position: absolute;
-    top: 48%;
+    top: 40%;
     left: 53%;
     background: transparent;
     border: 0;
     font-size: 80px;
-    color: #fff;
+    color: variables.$color-light;
 }
 
 .nav__Circle button#open {
     left: 53%;
+    font-size: 90px;
 }
 
 .nav__Circle button#close {
@@ -121,7 +124,7 @@
 
 
 .nav__container nav a {
-    color: #fafafa;
+    color: variables.$color-light;
     text-decoration: none;
     transition: all 0.5s;
 }

@@ -10,7 +10,7 @@ interface IProjectProps {
 
 const Project: FC<IProjectProps> = ({ name, backgroundImage, day, link }) => {
     return (
-        <div className='project__container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assests/' + backgroundImage})` }}>
+        <div data-testid="project_container" className='project__container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assests/' + backgroundImage})` }}>
             <div className='day'>
                 Day {day}
             </div>

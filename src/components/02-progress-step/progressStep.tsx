@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
-const ProgressStep = () => {
+const ProgressStep:FC = () => {
     const [step, setStep] = useState(1);
     const prevDisable = step === 1;
     const nextDisable = step === 4;
 
-    const handleClick = (i) => {
+    const handleClick: (i: number) => void = (i) => {
         setStep(prevStep => prevStep + i)
     }
 
-    const isActive = (id) => "step " + (step >= id ? "active" : "");
+    const isActive: (id: number) => string  = (id: number) => "step " + (step >= id ? "active" : "");
 
     return (
         <div className='pregressStep__container'>
