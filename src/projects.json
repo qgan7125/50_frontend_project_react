@@ -1,0 +1,184 @@
+{
+    "projects": [
+        {
+            "name": "Expanding Cards",
+            "backgroundImage": "",
+            "day": 1,
+            "link": "01ExpandingCards"
+        },
+        {
+            "name": "Progress Step",
+            "backgroundImage": "",
+            "day": 2,
+            "link": "02ProgressStep"
+        },
+        {
+            "name": "Rotation NavAnimation",
+            "backgroundImage": "",
+            "day": 3,
+            "link": "03RotationNavAnimation"
+        },
+        {
+            "name": "Hidden Search",
+            "backgroundImage": "",
+            "day": 4,
+            "link": "04HiddenSearch"
+        },
+        {
+            "name": "Blurry Loading",
+            "backgroundImage": "",
+            "day": 5,
+            "link": "05BlurryLoading"
+        },
+        {
+            "name": "Split Landing Page",
+            "backgroundImage": "",
+            "day": 6,
+            "link": "06SplitLandingPage"
+        },
+        {
+            "name": "Scroll Animation",
+            "backgroundImage": "",
+            "day": 7,
+            "link": "07ScrollAnimation"
+        },
+        {
+            "name": "Form Wave",
+            "backgroundImage": "",
+            "day": 8,
+            "link": "08FormWave"
+        },
+        {
+            "name": "Sound Board",
+            "backgroundImage": "",
+            "day": 9,
+            "link": "09SoundBoard"
+        },
+        {
+            "name": "Dad Joke",
+            "backgroundImage": "",
+            "day": 10,
+            "link": "10DadJoke"
+        },
+        {
+            "name": "Eventkey Code",
+            "backgroundImage": "",
+            "day": 11,
+            "link": "11EventkeyCode"
+        },
+        {
+            "name": "Faq Collapse",
+            "backgroundImage": "",
+            "day": 12,
+            "link": "12FaqCollapse"
+        },
+        {
+            "name": "Random Choice Picker",
+            "backgroundImage": "",
+            "day": 13,
+            "link": "13RandomChoicePicker"
+        },
+        {
+            "name": "Animated Navigation",
+            "backgroundImage": "",
+            "day": 14,
+            "link": "14AnimatedNavigation"
+        },
+        {
+            "name": "Drink Water",
+            "backgroundImage": "",
+            "day": 15,
+            "link": "15DrinkWater"
+        },
+        {
+            "name": "Increment Counter",
+            "backgroundImage": "",
+            "day": 16,
+            "link": "16IncrementCounter"
+        },
+        {
+            "name": "Movie App",
+            "backgroundImage": "",
+            "day": 17,
+            "link": "17MovieApp"
+        },
+        {
+            "name": "Background Slider",
+            "backgroundImage": "",
+            "day": 18,
+            "link": "18BackgroundSlider"
+        },
+        {
+            "name": "Theme Clock",
+            "backgroundImage": "",
+            "day": 19,
+            "link": "19ThemeClock"
+        },
+        {
+            "name": "Button Ripple Effect",
+            "backgroundImage": "",
+            "day": 20,
+            "link": "20ButtonRippleEffect"
+        },
+        {
+            "name": "Drag N drap",
+            "backgroundImage": "",
+            "day": 21,
+            "link": "21DragNdrap"
+        },
+        {
+            "name": "Drawing App",
+            "backgroundImage": "",
+            "day": 22,
+            "link": "22DrawingApp"
+        },
+        {
+            "name": "Kinetic Loader",
+            "backgroundImage": "",
+            "day": 23,
+            "link": "23KineticLoader"
+        },
+        {
+            "name": "Content Placeholder",
+            "backgroundImage": "",
+            "day": 24,
+            "link": "24ContentPlaceholder"
+        },
+        {
+            "name": "Sticky Navigation",
+            "backgroundImage": "",
+            "day": 25,
+            "link": "25StickyNavigation"
+        },
+        {
+            "name": "Double Vertical Slider",
+            "backgroundImage": "",
+            "day": 26,
+            "link": "26DoubleVerticalSlider"
+        },
+        {
+            "name": "Toast Notification",
+            "backgroundImage": "",
+            "day": 27,
+            "link": "27ToastNotification"
+        },
+        {
+            "name": "Github Profile",
+            "backgroundImage": "",
+            "day": 28,
+            "link": "28GithubProfile"
+        },
+        {
+            "name": "Double ClickHeart",
+            "backgroundImage": "",
+            "day": 29,
+            "link": "29DoubleClickHeart"
+        },
+        {
+            "name": "Auto Text Effect",
+            "backgroundImage": "",
+            "day": 30,
+            "link": "30AutoTextEffect"
+        }
+    ]
+}

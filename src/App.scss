@@ -1,0 +1,25 @@
+@use "./scss/reset";
+@use "./scss/fontfamily";
+@use "./scss/variables";
+
+// Home page
+@use "./pages/Home/home";
+
+// Navigation bar
+@use './components/navBar/navBar';
+
+// Footer
+@use './components/footer/footer';
+
+// Projects
+@use "./pages/Home/projects/project";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -79,7 +79,7 @@
     line-height: 1.5;
 }
 
-nav {
+.nav__container nav {
     position: fixed;
     bottom: 40px;
     left: 0;
@@ -88,35 +88,35 @@ nav {
     transition: transform 0.4s ease-in;
 }
 
-nav.show-nav {
+.nav__container nav.show-nav {
     transform: translateX(0%);
 }
 
-nav ul li {
+.nav__container nav ul li {
     list-style-type: none;
     color: var(--color-white);
     font-size: 20px;
     margin: 40px 0;
 }
 
-nav ul li.show-nav {
+.nav__container nav ul li.show-nav {
     transform: translateX(0%);
 }
 
-nav ul li+li {
+.nav__container nav ul li+li {
     margin-left: 15px;
     transform: translateX(-150%);
     transition: transform 0.5s ease-in;
 }
 
-nav ul li+li+li {
+.nav__container nav ul li+li+li {
     margin-left: 30px;
     transform: translateX(-200%);
     transition: transform 0.6s ease-in;
 }
 
 
-nav a {
+.nav__container nav a {
     color: #fafafa;
     text-decoration: none;
     transition: all 0.5s;
