@@ -1,16 +1,16 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
 .blurryLoading__container {
     position: relative;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixin.FlexCeter;
 }
 
 .bg {
     background: url('https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80') no-repeat center center/cover;
-    width: 100vw;
-    height: 100vh;
+    @include mixin.sameParentWH;
     z-index: -1;
     filter: blur(0px);
     position: absolute;
@@ -19,5 +19,5 @@
 
 .loading-text {
     font-size: 60px;
-    color: #fff;
+    color: variables.$color-light;
 }
