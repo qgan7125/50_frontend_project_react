@@ -13,12 +13,18 @@
 @use './components/footer/footer';
 
 // Projects
-@use "./pages/Home/projects/project";
+@use "./pages/Home/project/project";
+
+// Components
+@use "./components/01-expanding-cards/expandingCards";
+@use "./components/02-progress-step/progressStep";
+@use "./components/03-rotation-navigation-animation/rotationNavAnimation";
 
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 * {

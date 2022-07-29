@@ -10,9 +10,7 @@ header {
     @include mixin.FlexCeter;
     flex-direction: column;
     padding: 15% 5%;
-    background-image: url('../../assests/react-logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include mixin.backgroundImageStyle;
     background-position: -10%;
     color: variables.$color-light;
     position: relative;

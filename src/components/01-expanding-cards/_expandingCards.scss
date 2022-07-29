@@ -1,13 +1,16 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
 .expandingCards__container {
     display: flex;
-    width: 80vw;
+    width: 100vw;
+    padding: 50px;
+    font-family: 'Muli', sans-serif;
 }
 
 .expandingCards__cards {
     height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include mixin.backgroundImageStyle;
     cursor: pointer;
     border-radius: 40px;
     flex: 0.5;
@@ -19,9 +22,9 @@
 
 .expandingCards__cards h3 {
     position: absolute;
-    bottom: -5px;
-    left: 15px;
-    font-size: 20px;
+    bottom: 5px;
+    left: 40px;
+    font-size: 30px;
     opacity: 0;
 }
 
@@ -32,5 +35,5 @@
 .expandingCards__cards.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
-    color: "red";
+    color: variables.$color-light;
 }

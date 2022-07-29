@@ -2,13 +2,13 @@
     "projects": [
         {
             "name": "Expanding Cards",
-            "backgroundImage": "",
+            "backgroundImage": "01ExpandingCards.png",
             "day": 1,
             "link": "01ExpandingCards"
         },
         {
             "name": "Progress Step",
-            "backgroundImage": "",
+            "backgroundImage": "02ProgressStep.png",
             "day": 2,
             "link": "02ProgressStep"
         },

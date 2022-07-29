@@ -1,12 +1,11 @@
 @use '../../scss/variables';
+@use '../../scss/mixin';
 
 footer {
     height: 100px;
     width: 100%;
     padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixin.FlexCeter;
     font-size: 2em;
     color: variables.$color-light;
     background-color: variables.$color-secondary;

@@ -2,9 +2,9 @@
 @use "../../../scss/mixin";
 
 .project__container {
+    @include mixin.backgroundImageStyle;
+    background-color: variables.$color-light;
     position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 20%;
     border-bottom: 2px solid variables.$color-secondary;
     border-right: 2px solid variables.$color-secondary;
