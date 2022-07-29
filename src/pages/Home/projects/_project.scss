@@ -1,13 +1,14 @@
 @use '../../../scss/variables';
+@use "../../../scss/mixin";
 
 .project__container {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     width: 20%;
-    border-bottom: 2px solid map-get(variables.$theme-colors, 'secondary');
-    border-right: 2px solid map-get(variables.$theme-colors, 'secondary');
-    color: map-get(variables.$theme-colors, 'light');
+    border-bottom: 2px solid variables.$color-secondary;
+    border-right: 2px solid variables.$color-secondary;
+    color: variables.$color-light;
 
     .day {
         position: absolute;
@@ -16,19 +17,16 @@
         padding: 10px 15px;
         font-size: 20px;
         border-bottom-left-radius: 10px;
-        background-color: map-get(variables.$theme-colors, 'secondary-dark');
+        background-color: variables.$color-secondary-dark;
     }
 
     .project__info {
-        display: flex;
-        justify-content: center;
+        @include mixin.FlexCeter;
+        @include mixin.sameParentWH;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%;
         padding: 25% 0;
         min-width: 300px;
-        background-color: map-get(variables.$theme-colors, 'secondary');
+        background-color: variables.$color-secondary;
         opacity: 0;
         transition: all 0.3s ease-in-out;
 
@@ -36,8 +34,8 @@
             padding: 10px 20px;
             cursor: pointer;
             border: 0;
-            color: map-get(variables.$theme-colors, 'light');
-            background-color: map-get(variables.$theme-colors, 'secondary-dark');
+            color: variables.$color-light;
+            background-color: variables.$color-secondary-dark;
         }
 
         button:active {

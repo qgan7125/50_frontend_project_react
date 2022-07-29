@@ -1,0 +1,10 @@
+@mixin FlexCeter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sameParentWH {
+    width: 100%;
+    height: 100%;
+}

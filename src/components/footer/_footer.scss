@@ -8,6 +8,6 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    color: map-get(variables.$theme-colors, 'light');
-    background-color: map-get(variables.$theme-colors, 'secondary');
+    color: variables.$color-light;
+    background-color: variables.$color-secondary;
 }

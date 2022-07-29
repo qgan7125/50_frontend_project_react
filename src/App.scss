@@ -1,6 +1,7 @@
 @use "./scss/reset";
 @use "./scss/fontfamily";
 @use "./scss/variables";
+@use "./scss/mixin";
 
 // Home page
 @use "./pages/Home/home";

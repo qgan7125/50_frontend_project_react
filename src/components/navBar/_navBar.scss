@@ -3,8 +3,8 @@
 .navHome__container {
     font-size: 30px;
     padding: 30px 50px;
-    color: map-get(variables.$theme-colors, 'light');
-    background-color: map-get(variables.$theme-colors, 'secondary');
+    color: variables.$color-light;
+    background-color: variables.$color-secondary;
 
     ul {
         display: flex;
