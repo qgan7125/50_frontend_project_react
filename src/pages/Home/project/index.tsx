@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 interface IProjectProps {
     name: string;
@@ -9,6 +9,7 @@ interface IProjectProps {
 }
 
 const Project: FC<IProjectProps> = ({ name, backgroundImage, day, link }) => {
+    const navigate = useNavigate();
     return (
         <div data-testid="project_container" className='project__container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assests/' + backgroundImage})` }}>
             <div className='day'>
@@ -16,7 +17,7 @@ const Project: FC<IProjectProps> = ({ name, backgroundImage, day, link }) => {
             </div>
             <div className='project__info'>
                 <h2>{name}</h2>
-                <Link to={"/" + link}><button>Live Demo</button></Link>
+                <button onClick={() => navigate("/" + link)}>Live Demo</button>
             </div>
         </div>
     )
