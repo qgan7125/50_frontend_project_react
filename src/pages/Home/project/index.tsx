@@ -16,7 +16,7 @@ const Project: FC<IProjectProps> = ({ name, backgroundImage, day, link }) => {
             </div>
             <div className='project__info'>
                 <h2>{name}</h2>
-                <button><Link to={"/" + link}>Live Demo</Link></button>
+                <Link to={"/" + link}><button>Live Demo</button></Link>
             </div>
         </div>
     )

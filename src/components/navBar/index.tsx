@@ -1,10 +1,17 @@
-const NavBar = () => {
+import { FC, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
+const NavBar:FC = () => {
+    const routePath = useLocation();
     const scrollToProjects = (e) => {
         e.preventDefault();
         const projects = document.querySelector(".projects__container");
-        projects.scrollIntoView({ behavior: "smooth" });
+        projects?.scrollIntoView({ behavior: "smooth" });
     }
+
+    useEffect(() => {
+
+    }, [routePath]);
 
     return (
         <nav className='navHome__container'>
@@ -12,9 +19,14 @@ const NavBar = () => {
                 <li>
                     <a href='/#'>Home</a>
                 </li>
-                <li>
-                    <a href='/#' onClick={scrollToProjects}>Projects</a>
-                </li>
+                {
+                    document.location.pathname.length === 1 ?
+                        <li>
+                            <a href='/#' onClick={scrollToProjects}>Projects</a>
+                        </li>
+                    :
+                    null
+                }
                 <li>
                     <a
                         href='https://github.com/qgan7125/50_frontend_project_react'
