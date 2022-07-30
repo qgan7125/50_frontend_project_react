@@ -2,12 +2,12 @@ import { FC, useState, useEffect } from 'react';
 
 interface KeyCode {
     key?: string,
-    keyCode?: string,
+    keyCode?: number,
     code?: string
 }
 
 const EventkeyCode:FC = () => {
-    const [keyCode, setKeyCode] = useState({} as KeyCode);
+    const [keyCode, setKeyCode] = useState<KeyCode>({});
     
     const pressed: boolean = Object.keys(keyCode).length > 0 ? true : false;
 

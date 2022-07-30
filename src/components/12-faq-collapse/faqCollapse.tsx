@@ -1,10 +1,18 @@
-import { FC, useState } from 'react';
+import { FC, useState, MouseEvent } from 'react';
 import data from './data.json';
 
-const FaqCollapse:FC = () => {
-    const [Collapse, setCollapsee] = useState({});
+interface IFaq {
+    "Why shouldn't we trust atoms?"?: boolean,
+    "What do you call someone with no body and no nose?"?: boolean,
+    "What's the object-oriented way to become wealthy?"?: boolean,
+    "How many tickles does it take to tickle an octopus?"?: boolean,
+    "What is: 1 + 1?"?: boolean
+}
 
-    const handleClick = (e) => {
+const FaqCollapse:FC = () => {
+    const [Collapse, setCollapsee] = useState<IFaq>({});
+
+    const handleClick = (e: MouseEvent) => {
         const { id } = e.currentTarget;
         setCollapsee(prevCollapse => ({ ...prevCollapse, [id]: !prevCollapse[id] }));
     }

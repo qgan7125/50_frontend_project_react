@@ -1,11 +1,17 @@
 import { FC, useState, useEffect } from 'react';
 
 // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
-const scale = (number, inMin, inMax, outMin, outMax) => {
+const scale: (    
+    number: number, 
+    inMin: number, 
+    inMax: number, 
+    outMin: number, 
+    outMax: number) => number
+     = (number, inMin, inMax, outMin, outMax) => {
     return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
 
-const BlurryLoading:FC = () => {
+const BlurryLoading: FC = () => {
     const [loading, setLoading] = useState(0);
 
     useEffect(() => {

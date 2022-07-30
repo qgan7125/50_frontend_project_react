@@ -1,16 +1,16 @@
-import { FC, useState } from 'react';
+import { FC, useState, ChangeEvent, KeyboardEvent } from 'react';
 
 interface ITags {
     val: string,
     highlight: boolean,
 }
 
-const RandomChoicePicker:FC = () => {
+const RandomChoicePicker: FC = () => {
     const [inputs, setInput] = useState("");
     const [tags, setTags] = useState([] as ITags[]);
     const [isTyping, setIsTyping] = useState(true);
 
-    const handleInput = (e) => {
+    const handleInput = (e: ChangeEvent<HTMLTextAreaElement>) => {
         const { value } = e.target;
         if (!isTyping) { return };
 
@@ -23,7 +23,7 @@ const RandomChoicePicker:FC = () => {
             .map(v => ({ val: v, highlight: false })))
     }
 
-    const handleEnter = (e) => {
+    const handleEnter = (e: KeyboardEvent) => {
         if (e.keyCode === 13) {
             setIsTyping(!isTyping);
             setInput('');
@@ -34,7 +34,7 @@ const RandomChoicePicker:FC = () => {
         }
     }
 
-    const randomPick: () => void = () => {
+    const randomPick = () => {
         const interval = setInterval(() => {
             const idx = Math.floor(Math.random() * tags.length)
             setTags([...tags.slice(0, idx), { val: tags[idx].val, highlight: true }, ...tags.slice(idx + 1)]);

@@ -1,3 +1,4 @@
+import { FC, MouseEvent } from 'react';
 import applause from './sounds/applause.mp3';
 import boo from './sounds/boo.mp3';
 import gasp from './sounds/gasp.mp3';
@@ -14,7 +15,7 @@ interface Sounds {
     wrong: any
 }
 
-const SoundBoard = () => {
+const SoundBoard:FC = () => {
     const audios: Sounds = {
         applause: new Audio(applause),
         boo: new Audio(boo),
@@ -24,8 +25,8 @@ const SoundBoard = () => {
         wrong: new Audio(wrong)
     }
 
-    const handleClick = (e) => {
-        const { id } = e.target;
+    const handleClick = (e: MouseEvent<HTMLElement>) => {
+        const { id } = e.currentTarget;
         Object.keys(audios).forEach(aud => {
             const audio = audios[aud];
             audio.pause();

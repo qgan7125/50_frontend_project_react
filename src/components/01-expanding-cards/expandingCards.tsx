@@ -1,11 +1,11 @@
-import { FC, useState } from "react";
+import { FC, MouseEvent, useState } from "react";
 import data from './data.json';
 
 const ExpandingCards: FC = () => {
-  const [expaneded, setExpaneded] = useState(data.data[0].label);
+  const [expaneded, setExpaneded] = useState<string>(data.data[0].label);
 
-  const handleClick = (e) => {
-    const { id } = e.target;
+  const handleClick = (e: MouseEvent) => {
+    const { id } = e.currentTarget;
     setExpaneded(id);
   };
 

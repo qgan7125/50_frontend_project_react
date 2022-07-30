@@ -1,10 +1,10 @@
-import { FC, useState } from 'react';
+import { FC, useState, ChangeEvent } from 'react';
 
 const HiddenSearch:FC = () => {
     const [input, setInput] = useState("");
     const [toggle, setToggle] = useState(false);
 
-    const handleInput = (e) => {
+    const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
         const { value } = e.target;
         setInput(value);
     }

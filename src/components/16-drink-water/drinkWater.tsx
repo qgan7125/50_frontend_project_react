@@ -1,11 +1,11 @@
-import { FC, useState } from 'react';
+import { FC, useState, MouseEvent } from 'react';
 
 const CAPACITY_ML = 2000;
 const DrinkWater:FC = () => {
-    const [bottles, setBottles] = useState(new Array(CAPACITY_ML / 250).fill(false) as Boolean[]);
+    const [bottles, setBottles] = useState<Boolean[]>(new Array(CAPACITY_ML / 250).fill(false));
 
-    const handleClick = (e) => {
-        const { id } = e.target;
+    const handleClick = (e: MouseEvent) => {
+        const { id } = e.currentTarget;
         setBottles([...new Array(+id).fill(true), !bottles[id], ...new Array(bottles.length - +id - 1).fill(false)])
     }
 

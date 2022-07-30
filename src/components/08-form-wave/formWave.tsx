@@ -1,10 +1,15 @@
-import { FC, useState } from 'react';
+import { FC, ChangeEvent, useState } from 'react';
+
+interface IInput {
+    email?: string,
+    password?: string
+}
 
 const FormWave: FC = () => {
-    const [inputs, setInput] = useState({});
+    const [inputs, setInput] = useState<IInput>({});
 
-    const handleInput = (e) => {
-        setInput({ ...inputs, [e.target.id]: e.target.value });
+    const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
+        setInput({ ...inputs, [e.target.id]: e.currentTarget.value });
     }
 
     return (
