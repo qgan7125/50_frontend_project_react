@@ -1,0 +1,116 @@
+@use "../../scss/variables";
+@use "../../scss/mixin";
+
+:root {
+    --themeClock--primary-color: #262626;
+    --themeClock--secondary-color: #FBFBFB;
+}
+
+.themeClock__container.dark {
+    --themeClock--primary-color: #FBFBFB;
+    --themeClock--secondary-color: #262626;
+}
+
+.themeClock__container {
+    font-family: 'Heebo', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    @include mixin.FlexCenter;
+    flex-direction: column;
+    padding: 100px;
+    transition: all 0.5s ease-in;
+    color: var(--themeClock--primary-color);
+    background-color: var(--themeClock--secondary-color);
+
+    button {
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px 20px;
+        background-color: var(--themeClock--primary-color);
+        color: var(--themeClock--secondary-color);
+    }
+
+    .time {
+        font-size: 70px;
+    }
+
+    .date {
+        color: #aaa;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+    }
+
+    .circle {
+        background-color: var(--themeClock--primary-color);
+        color: var(--themeClock--secondary-color);
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 18px;
+        transition: all 0.5s ease-in;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .clock {
+        position: relative;
+        margin: 50px;
+        height: 300px;
+    }
+
+    .clock .needle {
+        background-color: var(--themeClock--primary-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 75px;
+        width: 4px;
+        transform-origin: bottom center;
+        transition: all 0.1s steps(60, end);
+    }
+
+    .clock .needle.hour {
+        transition: all 0.1s steps(12, end);
+        transform: translate(-50%, -100%) rotate(00deg);
+    }
+
+    .clock .needle.minutes {
+        transform: translate(-50%, -100%) rotate(00deg);
+        height: 150px;
+    }
+
+    .clock .needle.seconds {
+        transform: translate(-50%, -100%) rotate(00deg);
+        background-color: #e74c3c;
+        height: 150px;
+    }
+
+    .clock .center-point {
+        background-color: #e74c3c;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    .center-point::after {
+        content: '';
+        background-color: var(--themeClock--primary-color);
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+}

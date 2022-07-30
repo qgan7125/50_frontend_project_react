@@ -1,14 +1,28 @@
-import { useState, useEffect } from 'react';
-import "./themeClock.css";
+import { FC, useState, useEffect } from 'react';
 
-const scale = (num, in_min, in_max, out_min, out_max) => {
-    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
+const scale: (
+    num: number,
+    in_min: number,
+    in_max: number,
+    out_min: number,
+    out_max: number) => number
+    = (num, in_min, in_max, out_min, out_max) => {
+        return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    }
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-const getCurrentTime = () => {
+interface ITime {
+    hour: number,
+    minutes: number,
+    seconds: number,
+    month: number,
+    day: number,
+    date: number,
+}
+
+const getCurrentTime: () => ITime = () => {
     const time = new Date();
 
     return {
@@ -21,7 +35,7 @@ const getCurrentTime = () => {
     }
 }
 
-const ThemeClock = () => {
+const ThemeClock: FC = () => {
     const [theme, setTheme] = useState(false);
     const [time, setTime] = useState(getCurrentTime());
 
