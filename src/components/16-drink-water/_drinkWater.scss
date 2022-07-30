@@ -1,0 +1,81 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
+:root {
+    --drinkWater-border-color: #144fc6;
+    --drinkWater-fill-color: #6ab3f8;
+    --drinkWater-background-color: #3494e4;
+}
+
+.drinkWater__container {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    @include mixin.FlexCenter;
+    flex-direction: column;
+    background-color: var(--drinkWater-background-color);
+    color: variables.$color-light;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .bottle {
+        border: 4px solid var(--drinkWater-border-color);
+        border-radius: 0 0 30px 30px;
+        color: var(--drinkWater-border-color);
+        background-color: variables.$color-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottle.active {
+        background-color: var(--drinkWater-fill-color);
+        color: variables.$color-light;
+    }
+
+    .bottle.large {
+        width: 150px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bottle.small {
+        width: 55px;
+        height: 90px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .bottles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 280px;
+        justify-content: center;
+    }
+
+    .remained {
+        @include mixin.FlexCenter;
+        flex-direction: column;
+        transition: 0.3s ease;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        position: absolute;
+    }
+
+    .percentage {
+        background-color: var(--drinkWater-fill-color);
+        width: 100%;
+        @include mixin.FlexCenter;
+        position: absolute;
+        bottom: 0;
+        transition: 0.3s ease;
+        height: 0;
+        overflow: hidden;
+        font-size: 30px;
+    }
+}

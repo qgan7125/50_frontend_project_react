@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import './dadJoke.css';
+import { FC, useState, useEffect } from 'react';
 
-const DadJoke = () => {
+const DadJoke: FC = () => {
     const [joke, setJoke] = useState("");
 
     useEffect(() => {
-        fetchJoke()
+        fetchJoke();
     }, [])
 
-    const fetchJoke = async () => {
+    const fetchJoke: () => void = async () => {
         fetch('https://icanhazdadjoke.com', {
             headers: {
                 Accept: 'application/json',

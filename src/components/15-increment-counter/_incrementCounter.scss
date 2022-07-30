@@ -1,23 +1,25 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
 .incrementCounter__container {
+    font-family: 'Roboto Mono', sans-serif;
     width: 100vw;
     height: 100vh;
     background-color: #8e44ad;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-white);
+    @include mixin.FlexCenter;
+    color: variables.$color-light;
     gap: 100px;
 }
 
 .incrementCounter__content {
     text-align: center;
+
+    .counter {
+        font-size: 50px;
+    }   
 }
 
-.incrementCounter__content .counter {
-    font-size: 40px;
-}
-
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     .incrementCounter__container {
       flex-direction: column;
     }

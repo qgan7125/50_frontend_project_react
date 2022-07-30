@@ -1,14 +1,21 @@
-import React from 'react';
 import applause from './sounds/applause.mp3';
 import boo from './sounds/boo.mp3';
 import gasp from './sounds/gasp.mp3';
 import tada from './sounds/tada.mp3';
 import victory from './sounds/victory.mp3';
 import wrong from './sounds/wrong.mp3';
-import './soundBoard.css';
+
+interface Sounds {
+    applause: any,
+    boo: any,
+    gasp: any,
+    tada: any,
+    victory: any,
+    wrong: any
+}
 
 const SoundBoard = () => {
-    const audios = {
+    const audios: Sounds = {
         applause: new Audio(applause),
         boo: new Audio(boo),
         gasp: new Audio(gasp),
@@ -26,6 +33,7 @@ const SoundBoard = () => {
         })
         audios[id].play();
     }
+
     return (
         <div className='soundBoard__container'>
             <div className='soundBoard__content'>

@@ -1,10 +1,15 @@
-import React from 'react';
-import './movieItem.css';
+import { FC } from 'react';
 
-const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
+interface IMovieInfo {
+    title: string, 
+    overview: string, 
+    poster_path: string, 
+    vote_average: number
 
-const MovieItem = (props) => {
-    const { title, overview, poster_path, vote_average } = props;
+}
+const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
+
+const MovieItem:FC<IMovieInfo> = ({ title, overview, poster_path, vote_average }) => {
     return (
         <div className='movieItem'>
             <img src={IMG_PATH + poster_path} alt={title} />

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import './drinkWater.css';
+import { FC, useState } from 'react';
 
 const CAPACITY_ML = 2000;
-const DrinkWater = () => {
-    const [bottles, setBottles] = useState(new Array(CAPACITY_ML / 250).fill(false));
+const DrinkWater:FC = () => {
+    const [bottles, setBottles] = useState(new Array(CAPACITY_ML / 250).fill(false) as Boolean[]);
 
     const handleClick = (e) => {
         const { id } = e.target;
@@ -25,7 +24,7 @@ const DrinkWater = () => {
             <div className='bottles'>
                 {bottles.map((bottle, i) => (
                     <button
-                        id={i}
+                        id={i + ""}
                         key={i}
                         className={'bottle small ' + (bottle ? 'active' : "")}
                         onClick={handleClick}>250 <br /> ml</button>

@@ -85,16 +85,16 @@
             "link": "14AnimatedNavigation"
         },
         {
-            "name": "Drink Water",
-            "backgroundImage": "15DrinkWater.png",
+            "name": "Increment Counter",
+            "backgroundImage": "15IncrementCounter.png",
             "day": 15,
-            "link": "15DrinkWater"
+            "link": "15IncrementCounter"
         },
         {
-            "name": "Increment Counter",
-            "backgroundImage": "16IncrementCounter.png",
+            "name": "Drink Water",
+            "backgroundImage": "16DrinkWater.png",
             "day": 16,
-            "link": "16IncrementCounter"
+            "link": "16DrinkWater"
         },
         {
             "name": "Movie App",

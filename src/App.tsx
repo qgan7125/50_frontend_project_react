@@ -60,8 +60,8 @@ function App() {
         <Route path="/12FaqCollapse" element={<FaqCollapse />} />
         <Route path="/13RandomChoicePicker" element={<RandomChoicePicker />} />
         <Route path="/14AnimatedNavigation" element={<AnimatedNavigation />} />
-        <Route path="/15DrinkWater" element={<DrinkWater />} />
-        <Route path="/16IncrementCounter" element={<IncrementCounter />} />
+        <Route path="/15IncrementCounter" element={<IncrementCounter />} />
+        <Route path="/16DrinkWater" element={<DrinkWater />} />
         <Route path="/17MovieApp" element={<MovieApp />} />
         <Route path="/18BackgroundSlider" element={<BackgroundSlider />} />
         <Route path="/19ThemeClock" element={<ThemeClock />} />

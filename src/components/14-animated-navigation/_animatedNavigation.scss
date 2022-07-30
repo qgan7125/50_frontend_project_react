@@ -1,0 +1,85 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
+.animatedNavigation__container {
+    font-family: 'Muli', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eafbff;
+    background-image: linear-gradient(to bottom,
+            #eafbff 0%,
+            #eafbff 50%,
+            #5290f9 50%,
+            #5290f9 100%);
+    @include mixin.FlexCenter;
+}
+
+.animatedNavigation__nav {
+    background-color: variables.$color-light;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 72px;
+    transition: width 0.6s linear;
+    width: 80px;
+
+    ul {
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        transition: width 0.6s linear;
+        width: 0;
+    }
+
+    ul li {
+        list-style-type: none;
+        opacity: 0;
+        transition: transform 0.6s linear, opacity 0.6s linear;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        width: 20px;
+    }
+
+    button .line {
+        height: 2px;
+        width: 20px;
+        background-color: #5290f9;
+        position: absolute;
+        right: 0px;
+        transition: transform 0.6s linear;
+    }
+
+    button .line1 {
+        top: 22px;
+    }
+
+    button .line2 {
+        bottom: 20px;
+    }
+}
+
+.animatedNavigation__nav.active {
+    width: 350px;
+
+    ul {
+        width: 100%;
+    }
+
+    ul li {
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+
+    button .line1 {
+        transform: rotate(-765deg) translateY(5.5px);
+    }
+
+    button .line2 {
+        transform: rotate(765deg) translateY(-5.5px);
+    }
+}

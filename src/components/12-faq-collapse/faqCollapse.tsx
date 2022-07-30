@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 import data from './data.json';
-import './faqCollapse.css';
 
-
-const FaqCollapse = () => {
+const FaqCollapse:FC = () => {
     const [Collapse, setCollapsee] = useState({});
 
     const handleClick = (e) => {

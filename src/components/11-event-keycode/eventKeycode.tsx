@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './eventKeycode.css';
+import { FC, useState, useEffect } from 'react';
 
-const EventkeyCode = () => {
-    const [keyCode, setKeyCode] = useState({});
-    const pressed = Object.keys(keyCode).length > 0 ? true : false;
+interface KeyCode {
+    key?: string,
+    keyCode?: string,
+    code?: string
+}
+
+const EventkeyCode:FC = () => {
+    const [keyCode, setKeyCode] = useState({} as KeyCode);
+    
+    const pressed: boolean = Object.keys(keyCode).length > 0 ? true : false;
 
     const handleKeyDown = (e) => {
         setKeyCode(prevCode => ({ ...prevCode, 'key': e.key, 'keyCode': e.keyCode, 'code': e.code }))
@@ -12,6 +18,7 @@ const EventkeyCode = () => {
     useEffect(() => {
         document.addEventListener('keydown', handleKeyDown)
     }, [])
+
     return (
         <div className='eventKeycode__container'>
             {

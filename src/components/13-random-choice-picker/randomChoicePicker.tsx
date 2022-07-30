@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import './randomChoicePicker.css';
+import { FC, useState } from 'react';
 
-const RandomChoicePicker = () => {
+interface ITags {
+    val: string,
+    highlight: boolean,
+}
+
+const RandomChoicePicker:FC = () => {
     const [inputs, setInput] = useState("");
-    const [tags, setTags] = useState([]);
+    const [tags, setTags] = useState([] as ITags[]);
     const [isTyping, setIsTyping] = useState(true);
 
     const handleInput = (e) => {
@@ -30,7 +34,7 @@ const RandomChoicePicker = () => {
         }
     }
 
-    const randomPick = () => {
+    const randomPick: () => void = () => {
         const interval = setInterval(() => {
             const idx = Math.floor(Math.random() * tags.length)
             setTags([...tags.slice(0, idx), { val: tags[idx].val, highlight: true }, ...tags.slice(idx + 1)]);

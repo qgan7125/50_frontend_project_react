@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './incrementCounter.css';
+import { FC, useState, useEffect } from 'react';
 
 const COUNTER = {
     'twitter': 12000,
     'youtube': 5000,
     'facebook': 7500
 }
-const IncrementCounter = () => {
+const IncrementCounter:FC = () => {
     const [counter, setCounter] = useState({
         'twitter': 0,
         'youtube': 0,

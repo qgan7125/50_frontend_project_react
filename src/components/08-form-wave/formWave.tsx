@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import './formWave.css';
+import { FC, useState } from 'react';
 
-const FormWave = () => {
+const FormWave: FC = () => {
     const [inputs, setInput] = useState({});
 
     const handleInput = (e) => {
-        setInput({...inputs, [e.target.id]: e.target.value });
+        setInput({ ...inputs, [e.target.id]: e.target.value });
     }
 
     return (
@@ -20,7 +19,7 @@ const FormWave = () => {
                         required />
                     <label>{
                         "Email".split("")
-                            .map((ch, i) => <span key={ch + i} style={{transitionDelay: (i * 50) + "ms"}}>{ch}</span>)
+                            .map((ch, i) => <span key={ch + i} style={{ transitionDelay: (i * 50) + "ms" }}>{ch}</span>)
                     }</label>
                 </div>
                 <div className='row'>
@@ -32,7 +31,7 @@ const FormWave = () => {
                         required />
                     <label>{
                         "Password".split("")
-                            .map((ch, i) => <span key={ch + i} style={{transitionDelay: (i * 50) + "ms"}}>{ch}</span>)
+                            .map((ch, i) => <span key={ch + i} style={{ transitionDelay: (i * 50) + "ms" }}>{ch}</span>)
                     }</label>
                 </div>
                 <button>Login</button>

@@ -1,10 +1,13 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
 .faqCollpase__container {
+    font-family: 'Muli', sans-serif;
     background-color: #f0f0f0;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    @include mixin.FlexCenter;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
 }
 
@@ -13,9 +16,28 @@
     min-height: 100px;
     padding: 20px 30px;
     border-radius: 15px;
-    border: 1px solid black;
+    border: 1px solid variables.$color-dark;
     position: relative;
     overflow-x: hidden;
+
+    button {
+        position: absolute;
+        top: 40px;
+        right: 25px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    button .close {
+        color: #fff;
+        background-color: #9fa4a8;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        @include mixin.FlexCenter;
+    }
 }
 
 .faqCollpase__question.active {
@@ -23,26 +45,6 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.faqCollpase__question button {
-    position: absolute;
-    top: 40px;
-    right: 25px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.faqCollpase__question button .close {
-    color: #fff;
-    background-color: #9fa4a8;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .faqCollpase__question.active::before,
 .faqCollpase__question.active::after {

@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import './animatedNavigation.css';
+import { FC, useState } from 'react';
 
-const AnimatedNavigation = () => {
+const AnimatedNavigation:FC = () => {
     const navBar = ['Home', 'Works', "About", "Contact"];
     const [expanded, setExpanded] = useState(false);
 

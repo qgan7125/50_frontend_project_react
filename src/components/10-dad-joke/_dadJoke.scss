@@ -1,0 +1,54 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
+.dadJoke__container {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #686de0;
+    @include mixin.FlexCenter;
+}
+
+.dadJoke__content {
+    width: 800px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 50px 80px;
+    @include mixin.FlexCenter;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        opacity: 0.5;
+        letter-spacing: 2px;
+    }
+
+    button {
+        background-color: #9f68e0;
+        color: variables.$color-light;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+        padding: 14px 40px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 300px;
+    }
+
+    button:active {
+        transform: scale(0.98);
+    }
+
+    .Joke {
+        padding: 20px 0 50px 0;
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .dadJoke__content {
+      width: 600px;
+    }
+  }
