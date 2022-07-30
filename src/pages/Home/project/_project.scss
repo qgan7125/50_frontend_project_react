@@ -21,7 +21,7 @@
     }
 
     .project__info {
-        @include mixin.FlexCeter;
+        @include mixin.FlexCenter;
         @include mixin.sameParentWH;
         flex-direction: column;
         padding: 25% 0;

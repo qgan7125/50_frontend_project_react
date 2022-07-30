@@ -1,0 +1,35 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
+.scroll__container {
+    font-family: 'Roboto', sans-serif;
+    background-color: #efedd6;
+    width: 100%;
+    @include mixin.FlexCenter;
+    text-align: center;
+    flex-direction: column;
+
+    .box {
+        color: variables.$color-light;
+        background-color: steelblue;
+        width: 400px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        border-radius: 15px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+        transform: translateX(400%);
+        transition: transform 0.5s ease;
+        margin-bottom: 20px;
+    }
+
+    .box:nth-of-type(even) {
+        transform: translateX(-400%);
+    }
+
+    .box.show {
+        transform: translateX(0%);
+    }
+}

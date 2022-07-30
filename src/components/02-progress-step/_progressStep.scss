@@ -2,7 +2,7 @@
 @use "../..//scss/mixin";
 
 .pregressStep__container {
-    @include mixin.FlexCeter;
+    @include mixin.FlexCenter;
     flex-direction: column;
     text-align: center;
     font-family: 'Lato', sans-serif;

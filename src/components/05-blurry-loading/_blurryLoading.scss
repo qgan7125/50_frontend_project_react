@@ -5,7 +5,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    @include mixin.FlexCeter;
+    @include mixin.FlexCenter;
 }
 
 .bg {

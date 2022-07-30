@@ -38,6 +38,7 @@ import ExpandingCards from './components/01-expanding-cards/expandingCards';
 import ProgressStep from './components/02-progress-step/progressStep';
 import NavBar from './components/navBar';
 import Footer from './components/footer';
+import GoToTop from './components/GotoTop/GotoTop';
 
 function App() {
   return (
@@ -50,8 +51,8 @@ function App() {
         <Route path="/03RotationNavAnimation" element={<RotationNavAnimation />} />
         <Route path="/04HiddenSearch" element={<HiddenSearch />} />
         <Route path="/05BlurryLoading" element={<BlurryLoading />} />
-        <Route path="/06SplitLandingPage" element={<SplitLandingPage />} />
-        <Route path="/07ScrollAnimation" element={<ScrollAnimation />} />
+        <Route path="/06ScrollAnimation" element={<ScrollAnimation />} />
+        <Route path="/07SplitLandingPage" element={<SplitLandingPage />} />
         <Route path="/08FormWave" element={<FormWave />} />
         <Route path="/09SoundBoard" element={<SoundBoard />} />
         <Route path="/10DadJoke" element={<DadJoke />} />
@@ -76,6 +77,7 @@ function App() {
         <Route path="/29DoubleClickHeart" element={<DoubleClickHeart />} />
         <Route path="/30AutoTextEffect" element={<AutoTextEffect />} />
       </Routes>
+      <GoToTop />
       <Footer />
     </BrowserRouter>
   );

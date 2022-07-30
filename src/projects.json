@@ -31,16 +31,16 @@
             "link": "05BlurryLoading"
         },
         {
-            "name": "Split Landing Page",
-            "backgroundImage": "06SplitLandingPage.png",
+            "name": "Scroll Animation",
+            "backgroundImage": "06ScrollAnimation.png",
             "day": 6,
-            "link": "06SplitLandingPage"
+            "link": "06ScrollAnimation"
         },
         {
-            "name": "Scroll Animation",
-            "backgroundImage": "07ScrollAnimation.png",
+            "name": "Split Landing Page",
+            "backgroundImage": "07SplitLandingPage.png",
             "day": 7,
-            "link": "07ScrollAnimation"
+            "link": "07SplitLandingPage"
         },
         {
             "name": "Form Wave",

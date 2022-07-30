@@ -7,7 +7,7 @@ a {
 }
 
 header {
-    @include mixin.FlexCeter;
+    @include mixin.FlexCenter;
     flex-direction: column;
     padding: 15% 5%;
     @include mixin.backgroundImageStyle;

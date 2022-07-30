@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import './splitLandingPage.css';
+import { FC, useState } from 'react';
 
-const SplitLandingPage = () => {
-    const [expanded, setExpanded] = useState();
+const SplitLandingPage:FC = () => {
+    const [expanded, setExpanded] = useState("");
 
-    const isActive = (current) => {
+    const isActive: (current: string) => string = (current) => {
         if (!expanded) {
             return "";
         }
@@ -16,9 +15,10 @@ const SplitLandingPage = () => {
         return 'inactive';
     }
 
-    const handleHover = (target) => {
-        setExpanded(target)
+    const handleHover:(target: string | null) => void = (target) => {
+        setExpanded(target);
     }
+
     return (
         <div className='splitLanding__container'>
             <div

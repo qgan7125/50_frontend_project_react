@@ -1,4 +1,11 @@
 const NavBar = () => {
+
+    const scrollToProjects = (e) => {
+        e.preventDefault();
+        const projects = document.querySelector(".projects__container");
+        projects.scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
         <nav className='navHome__container'>
             <ul>
@@ -6,7 +13,7 @@ const NavBar = () => {
                     <a href='/#'>Home</a>
                 </li>
                 <li>
-                    <a href='/#'>Projects</a>
+                    <a href='/#' onClick={scrollToProjects}>Projects</a>
                 </li>
                 <li>
                     <a

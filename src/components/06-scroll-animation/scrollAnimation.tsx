@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import './scrollAnimation.css';
+import { FC, useEffect, useRef } from 'react';
 
 const CONTENT_NUMBER = 15;
-const ScrollAnimation = () => {
+const ScrollAnimation:FC = () => {
     const ref = useRef([])
 
     useEffect(() => {
@@ -26,10 +25,11 @@ const ScrollAnimation = () => {
 
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+    
     return (
         <div className='scroll__container'>
             <h1>Scroll to see the animation</h1>
-            {[...Array(CONTENT_NUMBER).keys()].map(i => (
+            {Array.from(Array(CONTENT_NUMBER).keys()).map(i => (
                 <div
                     key={i}
                     className='box'
