@@ -1,7 +1,6 @@
-import React from 'react';
-import './kineticLoader.css';
+import { FC } from 'react';
 
-const KineticLoader = () => {
+const KineticLoader:FC = () => {
     return (
         <div className='kineticLoader__container'>
             <div className='kinetic'></div>

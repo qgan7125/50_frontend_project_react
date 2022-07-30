@@ -1,0 +1,39 @@
+@use "../../scss/mixin";
+
+.autoTextEffect__container {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    @include mixin.FlexCenter;
+    flex-direction: column;
+    background-color: darksalmon;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    label{
+        position: absolute;
+        bottom: 0;
+        font-size: 25px;
+        margin: 30px;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+
+        input {
+            width: 50px;
+            padding: 5px;
+            font-size: 25px;
+            background-color: darksalmon;
+            border: none;
+            text-align: center;
+            margin-left: 5px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    }
+
+}
+

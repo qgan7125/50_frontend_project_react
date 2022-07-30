@@ -1,24 +1,22 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
 .drawingApp__container {
-    background-color: var(--color-white);
+    background-color: variables.$color-light;
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixin.FlexCenter;
 }
 
 .drawingApp__canvas--container {
     background-color: steelblue;
     display: flex;
     flex-direction: column;
-}
 
-.drawingApp__canvas--container canvas {
-    border: 2px solid steelblue;
-    background-color: var(--color-white);
+    canvas {
+        border: 2px solid steelblue;
+        background-color: variables.$color-light;
+    }
 }
 
 .drawingApp__tools {
@@ -27,7 +25,7 @@
 }
 
 .drawingApp__tools > * {
-    background-color: #fff;
+    background-color: variables.$color-light;
     border: none;
     display: inline-flex;
     align-items: center;

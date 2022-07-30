@@ -1,15 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import './stickyNavigation.css';
+import { FC, useState, useEffect } from 'react';
 
-const StickyNavigation = () => {
-    const [scrolling, setScrolling] = useState(false);
+interface IScrollPos {
+    navHome: boolean,
+    navProject: boolean
+}
+const StickyNavigation: FC = () => {
+    const [scrolling, setScrolling] = useState<IScrollPos>({
+        navHome: false,
+        navProject: false
+    });
 
     const handleScroll = (e) => {
-        if (e.path[1].pageYOffset > 200) {
-            setScrolling(true)
-        } else {
-            setScrolling(false)
+        if (e.path[1].pageYOffset > 95) {
+            setScrolling(prev => ({ ...prev, navHome: true }))
         }
+        if (e.path[1].pageYOffset > 300) {
+            setScrolling({ navHome: true, navProject: true })
+        }
+        if (e.path[1].pageYOffset <= 95) {
+            setScrolling({ navHome: false, navProject: false })
+        }
+
     }
 
     useEffect(() => {
@@ -17,27 +28,27 @@ const StickyNavigation = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll, true);
         };
-    }, [])
+    }, [scrolling])
+
 
     return (
-        <div className='stickyNavigation__container'>
-            <nav className={"nav " + (scrolling ? "active" : "")}>
-                <div className="container">
+        <div className={'stickyNavigation__container ' + (scrolling.navHome ? "active" : "")} >
+            <nav className={"nav " + (scrolling.navProject ? "active" : "")}>
+                <div className="nav__container">
                     <h1 className="logo"><a href="/#">My Website</a></h1>
                     <ul>
-                        <li><a href="/#" className="current">Home</a></li>
-                        <li><a href="/#">About</a></li>
-                        <li><a href="/#">Services</a></li>
-                        <li><a href="/#">Contact</a></li>
+                        <li><a href="/25StickyNavigation" className="current">Home</a></li>
+                        <li><a href="/25StickyNavigation">About</a></li>
+                        <li><a href="/25StickyNavigation">Services</a></li>
+                        <li><a href="/25StickyNavigation">Contact</a></li>
                     </ul>
                 </div>
+
             </nav>
 
             <div className="hero">
-                <div className="container">
-                    <h1>Welcome To My Website</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, consequuntur?</p>
-                </div>
+                <h1>Welcome To My Website</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, consequuntur?</p>
             </div>
 
             <section className="container content">

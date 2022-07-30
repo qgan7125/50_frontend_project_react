@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import './contentPlaceholder.css';
+import {  FC, useState, useEffect } from 'react';
 
 const DATA = {
     image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80',
@@ -10,8 +9,17 @@ const DATA = {
     date: "Oct 08, 2020"
 }
 
-const ContentPlaceholder = () => {
-    const [data, setData] = useState({});
+interface Data {
+    image?: string,
+    title?: string,
+    excerpt?: string,
+    profile?: string,
+    name?: string,
+    date?: string
+}
+
+const ContentPlaceholder:FC = () => {
+    const [data, setData] = useState<Data>({});
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

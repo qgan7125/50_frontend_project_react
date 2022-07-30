@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import './dragNdrop.css';
+import { FC, useState } from 'react';
 
 const BOX_NUMBER = 5;
 const FIRST_POSITION = 0;
-const DragNdrap = () => {
+const DragNdrap:FC = () => {
     const [dropped, setDropped] = useState(false);
 
     const handleDragStart = (e) => {
@@ -40,9 +39,9 @@ const DragNdrap = () => {
 
     return (
         <div className='dragNdrop__container'>
-            {[...Array(BOX_NUMBER).keys()].map(box => (
+            {Array.from(Array(BOX_NUMBER).keys()).map(box => (
                 <div
-                    id={box}
+                    id={box.toString()}
                     key={box}
                     className='empty'
                     onDragOver={handleDragOver}

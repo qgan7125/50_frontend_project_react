@@ -1,17 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@use "../../scss/variables";
+@use "../../scss/mixin";
 
 .contentPlaceholder__container {
     width: 100vw;
     min-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: #ecf0f1;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixin.FlexCenter;
 }
 
 .contentPlaceholder__card {
@@ -19,20 +14,20 @@
     border-radius: 10px;
     overflow: hidden;
     width: 350px;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .card__header {
     height: 200px;
 }
 
-.contentPlaceholder__card img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
 .card__content {
-    background-color: #fff;
+    background-color: variables.$color-light;
     padding: 30px;
 }
 
@@ -63,11 +58,11 @@
     justify-content: space-around;
     margin-left: 10px;
     width: 100px;
-}
 
-.card__author--info small {
-    color: #aaa;
-    margin-top: 5px;
+    small {
+        color: #aaa;
+        margin-top: 5px;
+    }
 }
 
 .animated-bg {

@@ -1,30 +1,45 @@
-import React, { useState } from 'react';
-import './githubProfile.css';
+import { FC, useState, ChangeEvent, FormEvent } from 'react';
 
-const APIURL = 'https://api.github.com/users/'
-const GithubProfile = () => {
+const APIURL = 'https://api.github.com/users/';
+
+type TRepoInfo = {
+    name: string,
+    href: string
+}
+
+interface  IProfile {
+    Name?: string,
+    Bio?: string,
+    avatar?: string,
+    Followers?: string,
+    Following?: string,
+    Repos?: string,
+    reposList? : TRepoInfo[]
+}
+
+const GithubProfile:FC = () => {
 
     const [input, setInput] = useState("");
-    const [profile, setProfile] = useState({});
+    const [profile, setProfile] = useState<IProfile>({});
     const [error, setError] = useState(false);
     const [expanded, setExpanded] = useState(false);
 
-    const handleInput = (e) => {
+    const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
         setInput(e.target.value)
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        getUser(input)
-        getRopos(input)
-        setInput("")
+        getUser(input);
+        getRopos(input);
+        setInput("");
     }
 
     const handleExpanded = () => {
         setExpanded(!expanded);
     }
 
-    const getUser = async (username) => {
+    const getUser = async (username: string) => {
         await fetch(APIURL + username)
             .then(res => {
                 if (res.status === 200) {
@@ -45,11 +60,12 @@ const GithubProfile = () => {
                 setError(false);
             }).catch((error) => {
                 console.log(error)
+                setProfile({})
                 setError(true);
             })
     }
 
-    const getRopos = async (username) => {
+    const getRopos = async (username: string) => {
         await fetch(APIURL + username + '/repos?sort=created')
             .then(res => {
                 if (res.status === 200) {

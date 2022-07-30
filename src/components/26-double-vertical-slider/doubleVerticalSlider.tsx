@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import './doubleVerticalSlider.css';
-
+import { FC, useState } from 'react';
 
 const DATA = [
     {
@@ -29,7 +27,7 @@ const DATA = [
     },
 ]
 
-const DoubleVerticalSlider = () => {
+const DoubleVerticalSlider:FC = () => {
     const [slider, setSlider] = useState(0);
 
     const handleUp = () => {

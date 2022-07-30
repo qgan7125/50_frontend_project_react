@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import './autoTextEffect.css';
+import { FC, useState, useEffect, ChangeEvent } from 'react';
 
 const TEXT = "We love programming!";
-const AutoTextEffect = () => {
+const AutoTextEffect: FC = () => {
     const [speed, setSpeed] = useState(1);
     const [text, setText] = useState("")
 
-    const handleSpeed = (e) => {
-        setSpeed(e.target.value)
+    const handleSpeed = (e: ChangeEvent<HTMLInputElement>) => {
+        setSpeed(+e.target.value)
     }
 
     useEffect(() => {
@@ -16,7 +15,7 @@ const AutoTextEffect = () => {
         const interval = setInterval(() => {
             setText(TEXT.slice(0, idx));
             idx++;
-            if(idx > TEXT.length) {
+            if (idx > TEXT.length) {
                 idx = 1;
             }
         }, 300 / speed)
