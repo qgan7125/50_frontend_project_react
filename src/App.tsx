@@ -39,6 +39,7 @@ import NavBar from './components/navBar';
 import Footer from './components/footer';
 import GoToTop from './components/GotoTop/GotoTop';
 import './App.scss';
+import PasswordGenerator from "./components/31-password-generator/passwordGenerator";
 
 function App() {
   return (
@@ -76,7 +77,7 @@ function App() {
         <Route path="/28GithubProfile" element={<GithubProfile />} />
         <Route path="/29DoubleClickHeart" element={<DoubleClickHeart />} />
         <Route path="/30AutoTextEffect" element={<AutoTextEffect />} />
-        {/* </Route> */}
+        <Route path="/31PasswordGenerator" element={<PasswordGenerator />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />

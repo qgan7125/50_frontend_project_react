@@ -179,6 +179,12 @@
             "backgroundImage": "30AutoTextEffect.png",
             "day": 30,
             "link": "30AutoTextEffect"
+        },
+        {
+            "name": "Password Generator",
+            "backgroundImage": "31PasswordGenerator.png",
+            "day": 31,
+            "link": "31PasswordGenerator"
         }
     ]
 }
