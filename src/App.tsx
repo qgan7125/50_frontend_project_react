@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -41,9 +41,8 @@ import GoToTop from './components/GotoTop/GotoTop';
 import './App.scss';
 
 function App() {
-  console.log(process.env.REACT_APP_BASE_PATHNAME)
   return (
-    <BrowserRouter basename={process.env.REACT_APP_BASE_PATHNAME}>
+    <HashRouter>
       <NavBar />
       <Routes>
         <Route index element={<Home />} />
@@ -77,10 +76,12 @@ function App() {
         <Route path="/28GithubProfile" element={<GithubProfile />} />
         <Route path="/29DoubleClickHeart" element={<DoubleClickHeart />} />
         <Route path="/30AutoTextEffect" element={<AutoTextEffect />} />
+        {/* </Route> */}
+        <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -11,9 +11,6 @@ on:
 permissions: 
   contents: write
 
-env:
-  REACT_APP_BASE_PATHNAME: 50_frontend_project_react
-
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
