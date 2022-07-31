@@ -15,7 +15,7 @@ const SplitLandingPage:FC = () => {
         return 'inactive';
     }
 
-    const handleHover:(target: string | null) => void = (target) => {
+    const handleHover:(target: string) => void = (target) => {
         setExpanded(target);
     }
 

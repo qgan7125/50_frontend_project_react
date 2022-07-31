@@ -9,7 +9,7 @@ interface IPosition {
 }
 
 const DoubleClickHeart:FC = () => {
-    const [position, setPosition] = useState<IPosition>({});
+    const [position, setPosition] = useState<IPosition| null>(null);
     const [rippleArr, setRippleArr] = useState<ReactNode[]>([]);
 
     const handleClick = (e: MouseEvent<HTMLDivElement>) => {
@@ -21,7 +21,7 @@ const DoubleClickHeart:FC = () => {
                 clickTime = 0
             } else {
                 clickTime = new Date().getTime();
-                setPosition({});
+                setPosition(null);
             }
         }
     }

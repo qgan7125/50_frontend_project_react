@@ -28,11 +28,11 @@ const SoundBoard:FC = () => {
     const handleClick = (e: MouseEvent<HTMLElement>) => {
         const { id } = e.currentTarget;
         Object.keys(audios).forEach(aud => {
-            const audio = audios[aud];
+            const audio = audios[aud as keyof Sounds];
             audio.pause();
             audio.currentTime = 0;
         })
-        audios[id].play();
+        audios[id as keyof Sounds].play();
     }
 
     return (

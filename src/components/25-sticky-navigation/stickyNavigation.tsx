@@ -10,14 +10,15 @@ const StickyNavigation: FC = () => {
         navProject: false
     });
 
-    const handleScroll = (e) => {
-        if (e.path[1].pageYOffset > 95) {
+    const handleScroll = (e: Event) => {
+        const { pageYOffset } = e.currentTarget as Window;
+        if (pageYOffset > 95) {
             setScrolling(prev => ({ ...prev, navHome: true }))
         }
-        if (e.path[1].pageYOffset > 300) {
+        if (pageYOffset > 300) {
             setScrolling({ navHome: true, navProject: true })
         }
-        if (e.path[1].pageYOffset <= 95) {
+        if (pageYOffset <= 95) {
             setScrolling({ navHome: false, navProject: false })
         }
 

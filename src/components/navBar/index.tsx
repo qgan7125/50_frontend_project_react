@@ -5,7 +5,7 @@ const NavBar:FC = () => {
     const routePath = useLocation();
     const navigate = useNavigate();
 
-    const scrollToProjects = (e) => {
+    const scrollToProjects = (e: MouseEvent) => {
         e.preventDefault();
         const projects = document.querySelector(".projects__container");
         projects?.scrollIntoView({ behavior: "smooth" });

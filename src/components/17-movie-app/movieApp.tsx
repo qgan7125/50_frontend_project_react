@@ -4,9 +4,17 @@ import MovieItem from './movieItem/movieItem';
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1'
 const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query="'
 
+
+interface IContent {
+    title: string, 
+    overview: string, 
+    poster_path: string, 
+    vote_average: number
+}
+
 const MovieApp: FC = () => {
     const [search, setSearch] = useState("");
-    const [contents, setcontents] = useState([]);
+    const [contents, setcontents] = useState<IContent[]>([]);
 
     const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
         setSearch(e.target.value)
@@ -45,7 +53,7 @@ const MovieApp: FC = () => {
                 <input onChange={handleSearch} placeholder='Search' value={search} />
             </form>
             <main className='movieApp__contents'>
-                {contents?.map(content => (
+                {contents.map(content => (
                     <MovieItem key={content.title + Math.random()} {...content} />
                 ))}
             </main>

@@ -1,23 +1,28 @@
 import { FC, useEffect, useRef } from 'react';
 
 const CONTENT_NUMBER = 15;
-const ScrollAnimation:FC = () => {
-    const ref = useRef([])
+
+const ScrollAnimation: FC = () => {
+    const ref = useRef<(HTMLDivElement | null)[]>([])
 
     useEffect(() => {
         ref.current.forEach(r => {
-            if (r.getBoundingClientRect().top < window.innerHeight) {
-                r.classList.add('show');
+            if (r) {
+                if (r?.getBoundingClientRect()?.top < window.innerHeight) {
+                    r?.classList?.add('show');
+                }
             }
         })
 
-        const handleScroll = (e) => {
-            const target = e.currentTarget.innerHeight;
+        const handleScroll = (e: Event) => {
+            const { innerHeight: target } = e.currentTarget as Window;
             ref.current.forEach(r => {
-                if (r.getBoundingClientRect().top < target) {
-                    r.classList.add('show');
-                } else {
-                    r.classList.remove('show');
+                if(r){
+                    if (r?.getBoundingClientRect()?.top < target) {
+                        r?.classList?.add('show');
+                    } else {
+                        r?.classList?.remove('show');
+                    }
                 }
             })
         }
@@ -25,7 +30,7 @@ const ScrollAnimation:FC = () => {
 
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
-    
+
     return (
         <div className='scroll__container'>
             <h1>Scroll to see the animation</h1>

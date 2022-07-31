@@ -1,40 +1,41 @@
-import { FC, useState } from 'react';
+import { FC, useState, DragEvent } from 'react';
 
 const BOX_NUMBER = 5;
 const FIRST_POSITION = 0;
 const DragNdrap:FC = () => {
     const [dropped, setDropped] = useState(false);
 
-    const handleDragStart = (e) => {
-        e.target.className += ' hold';
-        setTimeout(() => e.target.className = 'invisible', 0);
+    const handleDragStart = (e: DragEvent<HTMLDivElement>) => {
+        const currentNode = e.currentTarget;
+        currentNode.className += ' hold';
+        setTimeout(() => currentNode.className = 'invisible', 0);
         setDropped(false);
     }
 
     // dragEnd event happens after drop event
-    const handleDragEnd = (e) => {
+    const handleDragEnd = (e: DragEvent<HTMLDivElement>) => {
         if(!dropped){
-            e.target.className = 'fill';
+            e.currentTarget.className = 'fill';
         }
     }
 
-    const handleDragOver = (e) => {
+    const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
         e.preventDefault();
     }
 
-    const handledragEnter = (e) => {
+    const handledragEnter = (e: DragEvent<HTMLDivElement>) => {
         e.preventDefault();
-        e.target.className += " hovered";
+        e.currentTarget.className += " hovered";
     }
 
-    const handleDragLeave = (e) => {
-        e.target.className = e.target.className.split(" ")[0];
+    const handleDragLeave = (e: DragEvent<HTMLDivElement>) => {
+        e.currentTarget.className = e.currentTarget.className.split(" ")[0];
     }
 
-    const handleDrop = (e) => {
+    const handleDrop = (e: DragEvent<HTMLDivElement>) => {
         setDropped(true);
-        e.target.className = e.target.className.split(" ")[0];
-        e.target.childNodes[0].className ='fill';
+        e.currentTarget.className = e.currentTarget.className.split(" ")[0];
+        e.currentTarget.children[0].className ='fill';
     }
 
     return (

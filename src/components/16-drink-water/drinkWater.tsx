@@ -6,7 +6,7 @@ const DrinkWater:FC = () => {
 
     const handleClick = (e: MouseEvent) => {
         const { id } = e.currentTarget;
-        setBottles([...new Array(+id).fill(true), !bottles[id], ...new Array(bottles.length - +id - 1).fill(false)])
+        setBottles([...new Array(+id).fill(true), !bottles[+id], ...new Array(bottles.length - +id - 1).fill(false)])
     }
 
     return (

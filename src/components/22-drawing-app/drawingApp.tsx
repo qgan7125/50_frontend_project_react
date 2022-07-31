@@ -5,12 +5,12 @@ const CANVAS__HEIGHT = 800;
 
 type Position = { x?: number, y?: number }
 
-const DrawingApp:FC = () => {
+const DrawingApp: FC = () => {
     const [size, setSize] = useState(5);
     const [color, setColor] = useState('#000000');
     const [isPressed, setIsPressed] = useState(false);
     const [firstPosition, setFirstPosition] = useState<Position>({});
-    const canvasRef = useRef<HTMLCanvasElement>();
+    const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
     const handleIncrement = () => {
         if (size === 50) {
@@ -57,37 +57,41 @@ const DrawingApp:FC = () => {
 
     const drawCircle = (x: number, y: number) => {
         const canvas = canvasRef.current as HTMLCanvasElement;
-        if (!canvas) {
-            return
+        if (canvas) {
+            const context: CanvasRenderingContext2D | null = canvas.getContext('2d');
+            if (context) {
+                context.beginPath();
+                context.fillStyle = color;
+                context.arc(x, y, size, 0, Math.PI * 2);
+                context.fill();
+            }
         }
-        const context = canvas.getContext('2d');
-        context.beginPath();
-        context.fillStyle = color;
-        context.arc(x, y, size, 0, Math.PI * 2);
-        context.fill();
+
     }
 
     const drawLine = (x2: number, y2: number) => {
         const canvas = canvasRef.current as HTMLCanvasElement;
-        if (!canvas) {
-            return
+        if (canvas) {
+            const context: CanvasRenderingContext2D | null = canvas.getContext('2d');
+            if (context) {
+                context.beginPath();
+                context.moveTo(firstPosition.x as number, firstPosition.y as number);
+                context.lineTo(x2, y2);
+                context.strokeStyle = color;
+                context.lineWidth = size * 2;
+                context.stroke();
+            }
         }
-        const context = canvas.getContext('2d');
-        context.beginPath();
-        context.moveTo(firstPosition.x, firstPosition.y);
-        context.lineTo(x2, y2);
-        context.strokeStyle = color;
-        context.lineWidth = size * 2;
-        context.stroke();
+
     }
 
     const clearCanvas = () => {
         const canvas = canvasRef.current as HTMLCanvasElement;
-        if (!canvas) {
-            return
+        if (canvas) {
+            const context: CanvasRenderingContext2D | null = canvas.getContext('2d');
+            context?.clearRect(0, 0, CANVAS__WIDTH, CANVAS__HEIGHT);
         }
-        const context = canvas.getContext('2d');
-        context.clearRect(0, 0, CANVAS__WIDTH, CANVAS__HEIGHT);
+
     }
 
     return (

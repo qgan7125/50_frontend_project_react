@@ -14,22 +14,22 @@ const FaqCollapse:FC = () => {
 
     const handleClick = (e: MouseEvent) => {
         const { id } = e.currentTarget;
-        setCollapsee(prevCollapse => ({ ...prevCollapse, [id]: !prevCollapse[id] }));
+        setCollapsee(prevCollapse => ({ ...prevCollapse, [id]: !prevCollapse[id as keyof IFaq] }));
     }
 
     return (
         <div className='faqCollpase__container'>
             <h1>Frequently Asked Questions</h1>
             {data.data.map(d => (
-                <div key={d.quesiton} className={"faqCollpase__question " + (Collapse[d.quesiton] ? "active" : "")}>
+                <div key={d.quesiton} className={"faqCollpase__question " + (Collapse[d.quesiton as keyof IFaq] ? "active" : "")}>
                     <h3>{d.quesiton}</h3>
 
-                    {Collapse[d.quesiton] && <p>{d.answer}</p>}
+                    {Collapse[d.quesiton as keyof IFaq] && <p>{d.answer}</p>}
 
 
                     <button id={d.quesiton} onClick={handleClick}>
                         {
-                            Collapse[d.quesiton]
+                            Collapse[d.quesiton as keyof IFaq]
                                 ?
                                 <i className="fas fa-times close"></i>
                                 :

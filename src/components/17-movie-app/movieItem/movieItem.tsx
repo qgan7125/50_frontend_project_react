@@ -5,8 +5,8 @@ interface IMovieInfo {
     overview: string, 
     poster_path: string, 
     vote_average: number
-
 }
+
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 
 const MovieItem:FC<IMovieInfo> = ({ title, overview, poster_path, vote_average }) => {

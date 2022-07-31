@@ -1,10 +1,17 @@
-import { FC, useState } from 'react';
+import { FC, useState, MouseEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const RotationNavAnimation: FC = () => {
+    const navigate = useNavigate();
     const [toggle, setToggle] = useState(false);
 
     const handleClick = () => {
         setToggle(!toggle);
+    }
+
+    const handleNavLink = (e: MouseEvent) => {
+        e.preventDefault();
+        return navigate("/03RotationNavAnimation");
     }
     return (
         <div className='nav__container'>
@@ -36,9 +43,9 @@ const RotationNavAnimation: FC = () => {
             </div>
             <nav className={toggle ? "show-nav" : ""}>
                 <ul>
-                    <li><a href="/03RotationNavAnimation"><i className="fas fa-home"></i> HOME</a></li>
-                    <li className={toggle ? "show-nav" : ""}><a href="/03RotationNavAnimation"><i className="fas fa-user-alt"></i> ABOUT</a></li>
-                    <li className={toggle ? "show-nav" : ""}><a href="/03RotationNavAnimation"><i className="fas fa-envelope"></i> CONTACT</a></li>
+                    <li><a href="/#" onClick={handleNavLink}><i className="fas fa-home"></i> HOME</a></li>
+                    <li className={toggle ? "show-nav" : ""}><a href="/#" onClick={handleNavLink}><i className="fas fa-user-alt"></i> ABOUT</a></li>
+                    <li className={toggle ? "show-nav" : ""}><a href="/#" onClick={handleNavLink}><i className="fas fa-envelope"></i> CONTACT</a></li>
                 </ul>
             </nav>
         </div>

@@ -11,7 +11,7 @@ const EventkeyCode:FC = () => {
     
     const pressed: boolean = Object.keys(keyCode).length > 0 ? true : false;
 
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
         setKeyCode(prevCode => ({ ...prevCode, 'key': e.key, 'keyCode': e.keyCode, 'code': e.code }))
     }
 

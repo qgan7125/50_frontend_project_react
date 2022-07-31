@@ -7,17 +7,17 @@ type TRepoInfo = {
     href: string
 }
 
-interface  IProfile {
+interface IProfile {
     Name?: string,
     Bio?: string,
     avatar?: string,
     Followers?: string,
     Following?: string,
     Repos?: string,
-    reposList? : TRepoInfo[]
+    reposList?: TRepoInfo[]
 }
 
-const GithubProfile:FC = () => {
+const GithubProfile: FC = () => {
 
     const [input, setInput] = useState("");
     const [profile, setProfile] = useState<IProfile>({});
@@ -74,7 +74,7 @@ const GithubProfile:FC = () => {
                 throw new Error(`Error! status: ${res.status}`);
             })
             .then(res => {
-                const repos = res?.map(repo => ({
+                const repos: TRepoInfo[] = res.map((repo: { html_url: any; name: any; }) => ({
                     href: repo.html_url,
                     name: repo.name
                 }))
@@ -84,6 +84,8 @@ const GithubProfile:FC = () => {
                 console.log(error)
             })
     }
+
+    const HasValue = profile.reposList && profile.reposList.length > 5;
 
     return (
         <div className='githubProfile__container'>
@@ -109,7 +111,7 @@ const GithubProfile:FC = () => {
                                 <a key={repo.name} href={repo.href} target="_blank" rel="noreferrer" >{repo.name} </a>
                             ))}
                         </div>
-                        {profile.reposList?.length > 5  && <button className='btn' onClick={handleExpanded}>{expanded ? "Expanded Less" : "Expanded More"}</button>}
+                        {HasValue && <button className='btn' onClick={handleExpanded}>{expanded ? "Expanded Less" : "Expanded More"}</button>}
                     </div>
                 </div>}
                 {error && <div className='githubProfile__error'>No profile with this username</div>}
