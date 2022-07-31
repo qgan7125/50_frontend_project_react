@@ -42,7 +42,7 @@ import './App.scss';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.REACT_APP_BASE_PATHNAME}>
       <NavBar />
       <Routes>
         <Route index element={<Home />} />
