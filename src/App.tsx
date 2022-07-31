@@ -44,7 +44,7 @@ function App() {
     <BrowserRouter>
     <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="/01ExpandingCards" element={<ExpandingCards />} />
         <Route path="/02ProgressStep" element={<ProgressStep />} />
         <Route path="/03RotationNavAnimation" element={<RotationNavAnimation />} />
