@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pretsbuild": "tsc --build --clean",
-    "tsbuild": "tsc"
+    "tsbuild": "tsc & react-scripts build"
   },
   "eslintConfig": {
     "extends": [

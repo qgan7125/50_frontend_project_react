@@ -8,7 +8,7 @@ const Home:FC = () => {
         <div>
             <main>
                 <header style={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL + "/assests/react-logo.png"})`
+                    backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/react-logo.png"})`
                 }}>
                     <div className='blur'></div>
                     <h1>50 Projects in 50 Days</h1>
