@@ -41,6 +41,7 @@ import GoToTop from './components/GotoTop/GotoTop';
 import './App.scss';
 
 function App() {
+  console.log(process.env.REACT_APP_BASE_PATHNAME)
   return (
     <BrowserRouter basename={process.env.REACT_APP_BASE_PATHNAME}>
       <NavBar />
