@@ -34,3 +34,5 @@
 | 28 | [Github Profile](./src/components/28-github-profile/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/28GithubProfile)
 | 29 | [Double Click Heart](./src/components/29-double-click-heart/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/29DoubleClickHeart)
 | 30 | [Auto Text Effect](./src/components/30-auto-text-effect/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/30AutoTextEffect)
+| 31 | [Password Generator](./src/components/31-password-generator/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/31PasswordGenerator)
+| 32 | [Good Cheap Fast](./src/components/32-good-cheap-fast/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/32GoodCheapFast)
