@@ -23,11 +23,9 @@
   "scripts": {
     "start": "react-scripts start",
     "prebuild": "rimraf build",
-    "build": "react-scripts build",
+    "build": "tsc & react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "pretsbuild": "tsc --build --clean",
-    "tsbuild": "tsc & react-scripts build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
