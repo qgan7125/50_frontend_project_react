@@ -185,6 +185,12 @@
             "backgroundImage": "31PasswordGenerator.png",
             "day": 31,
             "link": "31PasswordGenerator"
+        },
+        {
+            "name": "Good Cheap Fast",
+            "backgroundImage": "32GoodCheapFast.png",
+            "day": 32,
+            "link": "32GoodCheapFast"
         }
     ]
 }
