@@ -1,0 +1,31 @@
+@use "./note/note";
+@use "../../scss/variables";
+
+.noteApp__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background-color: #7bdaf3;
+
+    .btn__add {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: #9ec862;
+        color: variables.$color-light;
+        border: none;
+        border-radius: 3px;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+
+    .btn__add:active {
+        transform: scale(0.98);
+    }
+
+}

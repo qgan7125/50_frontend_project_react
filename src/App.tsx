@@ -41,6 +41,7 @@ import GoToTop from './components/GotoTop/GotoTop';
 import './App.scss';
 import PasswordGenerator from "./components/31-password-generator/passwordGenerator";
 import GoodCheapFast from "./components/32-good-cheap-fast/goodCheapFast";
+import NotesApp from "./components/33-notes-app/notesApp";
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
         <Route path="/30AutoTextEffect" element={<AutoTextEffect />} />
         <Route path="/31PasswordGenerator" element={<PasswordGenerator />} />
         <Route path="/32GoodCheapFast" element={<GoodCheapFast />} />
+        <Route path="/33NotsApp" element={<NotesApp />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />

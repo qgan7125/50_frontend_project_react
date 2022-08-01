@@ -36,3 +36,4 @@
 | 30 | [Auto Text Effect](./src/components/30-auto-text-effect/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/30AutoTextEffect)
 | 31 | [Password Generator](./src/components/31-password-generator/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/31PasswordGenerator)
 | 32 | [Good Cheap Fast](./src/components/32-good-cheap-fast/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/32GoodCheapFast)
+| 33 | [Notes App](./src/components/33-notes-app/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/33NotsApp)
