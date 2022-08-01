@@ -12,7 +12,7 @@ const Home:FC = () => {
                 }}>
                     <div className='blur'></div>
                     <h1>50 Projects in 50 Days</h1>
-                    <p>50 mini Projects learned from <a href='https://50projects50days.com/' target='_blank' rel="noreferrer"><strong>50projects50days</strong></a> in react version</p>
+                    <p>50 mini Projects learned from <a href='https://50projects50days.com/' target='_blank' rel="noreferrer"><strong>50projects50days</strong></a> in react version with Typescript and SASS</p>
                 </header>
                 <div className='projects__container'>
                     {projectData['projects']?.map(project => (
