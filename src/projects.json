@@ -203,6 +203,12 @@
             "backgroundImage": "34AnimatedCountdown.png",
             "day": 34,
             "link": "34AnimatedCountdown"
+        },
+        {
+            "name": "Image Carousel",
+            "backgroundImage": "35ImageCarousel.png",
+            "day": 35,
+            "link": "35ImageCarousel"
         }
     ]
 }

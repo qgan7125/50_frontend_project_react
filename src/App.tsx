@@ -43,6 +43,7 @@ import PasswordGenerator from "./components/31-password-generator/passwordGenera
 import GoodCheapFast from "./components/32-good-cheap-fast/goodCheapFast";
 import NotesApp from "./components/33-notes-app/notesApp";
 import AnimatedCountdown from "./components/34-animated-countdown/animatedCountdown";
+import ImageCarousel from "./components/35-image-carousel/imageCarousel";
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
         <Route path="/32GoodCheapFast" element={<GoodCheapFast />} />
         <Route path="/33NotsApp" element={<NotesApp />} />
         <Route path="/34AnimatedCountdown" element={<AnimatedCountdown />} />
+        <Route path="/35ImageCarousel" element={<ImageCarousel />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />
