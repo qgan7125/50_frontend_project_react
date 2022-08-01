@@ -197,6 +197,12 @@
             "backgroundImage": "33NotsApp.png",
             "day": 33,
             "link": "33NotsApp"
+        },
+        {
+            "name": "Aniamted Countdown",
+            "backgroundImage": "34AnimatedCountdown.png",
+            "day": 34,
+            "link": "34AnimatedCountdown"
         }
     ]
 }
