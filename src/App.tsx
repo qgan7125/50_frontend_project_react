@@ -44,6 +44,7 @@ import GoodCheapFast from "./components/32-good-cheap-fast/goodCheapFast";
 import NotesApp from "./components/33-notes-app/notesApp";
 import AnimatedCountdown from "./components/34-animated-countdown/animatedCountdown";
 import ImageCarousel from "./components/35-image-carousel/imageCarousel";
+import HoverBoard from "./components/36-hover-board/hoverBoard";
 
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
         <Route path="/33NotsApp" element={<NotesApp />} />
         <Route path="/34AnimatedCountdown" element={<AnimatedCountdown />} />
         <Route path="/35ImageCarousel" element={<ImageCarousel />} />
+        <Route path="/36HoverBoard" element={<HoverBoard />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />

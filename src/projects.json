@@ -209,6 +209,12 @@
             "backgroundImage": "35ImageCarousel.png",
             "day": 35,
             "link": "35ImageCarousel"
+        },
+        {
+            "name": "Hover Board",
+            "backgroundImage": "36HoverBoard.png",
+            "day": 36,
+            "link": "36HoverBoard"
         }
     ]
 }

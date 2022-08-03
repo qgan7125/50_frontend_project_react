@@ -1,0 +1,56 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
+$color-map : (color1: #e74c3c,
+    color2: #8e44ad,
+    color3: #3498db,
+    color4: #e67e22,
+    color5: #2ecc71);
+
+@mixin square-color($color) {
+    .square-#{$color} {
+        background-color: map-get($map: $color-map, $key: $color);
+        box-shadow: 0 0 2px map-get($map: $color-map, $key: $color), 0 0 10px map-get($map: $color-map, $key: $color);
+    }
+}
+
+$colors: (
+    "color1",
+    "color2",
+    "color3",
+    "color4",
+    "color5"
+);
+
+@mixin generateSquareColor {
+    @each $color in $colors {
+        @include square-color($color);
+    }
+}
+
+.hoverBoard__container {
+    @include mixin.FlexCenter;
+    background-color: #111;
+    width: 100vw;
+    min-height: 90vh;
+
+    .board {
+        @include mixin.FlexCenter;
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+
+    .square {
+        background-color: #1d1d1d;
+        box-shadow: 0 0 2px variables.$color-dark;
+        height: 16px;
+        width: 16px;
+        margin: 2px;
+        transition: 2s ease;
+
+        &:hover {
+            transition-duration: 0s;
+        }
+    }
+    @include generateSquareColor;
+}

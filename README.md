@@ -39,3 +39,4 @@
 | 33 | [Notes App](./src/components/33-notes-app/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/33NotsApp)
 | 34 | [Animated countDown](./src/components/34-animated-countdown/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/34AnimatedCountdown)
 | 35 | [Image Carousel](./src/components/35-image-carousel/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/35ImageCarousel)
+| 36 | [Hover Board](./src/components/36-hover-board/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/36HoverBoard)
