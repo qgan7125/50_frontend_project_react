@@ -14,12 +14,12 @@ const HiddenSearch:FC = () => {
     }
 
     return (
-        <div className='hidden__container'>
+        <main className='hidden__container'>
             <div className={'input__container ' + (toggle ? "active" : "")}>
                 <input onChange={handleInput} value={input} />
                 <button onClick={handleToggle} className='btn_hidden--search'><i className="fas fa-search"></i></button>
             </div>
-        </div>
+        </main>
     )
 }
 

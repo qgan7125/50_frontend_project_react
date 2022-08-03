@@ -9,7 +9,7 @@ interface IFaq {
     "What is: 1 + 1?"?: boolean
 }
 
-const FaqCollapse:FC = () => {
+const FaqCollapse: FC = () => {
     const [Collapse, setCollapsee] = useState<IFaq>({});
 
     const handleClick = (e: MouseEvent) => {
@@ -18,14 +18,13 @@ const FaqCollapse:FC = () => {
     }
 
     return (
-        <div className='faqCollpase__container'>
+        <main className='faqCollpase__container'>
             <h1>Frequently Asked Questions</h1>
             {data.data.map(d => (
-                <div key={d.quesiton} className={"faqCollpase__question " + (Collapse[d.quesiton as keyof IFaq] ? "active" : "")}>
+                <section key={d.quesiton} className={"faqCollpase__question " + (Collapse[d.quesiton as keyof IFaq] ? "active" : "")}>
                     <h3>{d.quesiton}</h3>
 
                     {Collapse[d.quesiton as keyof IFaq] && <p>{d.answer}</p>}
-
 
                     <button id={d.quesiton} onClick={handleClick}>
                         {
@@ -36,9 +35,9 @@ const FaqCollapse:FC = () => {
                                 <i className="fas fa-chevron-down"></i>
                         }
                     </button>
-                </div>
+                </section>
             ))}
-        </div>
+        </main>
     )
 }
 

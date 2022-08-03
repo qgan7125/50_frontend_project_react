@@ -6,7 +6,7 @@ const bgs = ['https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb
     'https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80',
     'https://images.unsplash.com/photo-1559087867-ce4c91325525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80']
 
-const BackgroundSlider:FC = () => {
+const BackgroundSlider: FC = () => {
     const [bg, setBg] = useState(0);
 
     const handleClick = (n: number) => {
@@ -14,7 +14,7 @@ const BackgroundSlider:FC = () => {
     }
 
     return (
-        <div className='backgroundSlider__container' style={{ backgroundImage: `url(${bgs[bg]})` }}>
+        <main className='backgroundSlider__container' style={{ backgroundImage: `url(${bgs[bg]})` }}>
             <div className="backgroundSlider__content" >
                 <div className="backgroundSlider__slice" style={{ backgroundImage: `url(${bgs[bg]})` }}></div>
                 <button
@@ -31,7 +31,7 @@ const BackgroundSlider:FC = () => {
                     <i className="fas fa-arrow-right"></i>
                 </button>
             </div>
-        </div>
+        </main>
     )
 }
 

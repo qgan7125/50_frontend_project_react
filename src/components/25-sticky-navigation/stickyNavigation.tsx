@@ -33,19 +33,20 @@ const StickyNavigation: FC = () => {
 
 
     return (
-        <div className={'stickyNavigation__container ' + (scrolling.navHome ? "active" : "")} >
-            <nav className={"nav " + (scrolling.navProject ? "active" : "")}>
-                <div className="nav__container">
-                    <h1 className="logo"><a href="/#">My Website</a></h1>
-                    <ul>
-                        <li><a href="/25StickyNavigation" className="current">Home</a></li>
-                        <li><a href="/25StickyNavigation">About</a></li>
-                        <li><a href="/25StickyNavigation">Services</a></li>
-                        <li><a href="/25StickyNavigation">Contact</a></li>
-                    </ul>
-                </div>
-
-            </nav>
+        <main className={'stickyNavigation__container ' + (scrolling.navHome ? "active" : "")} >
+            <header>
+                <nav className={"nav " + (scrolling.navProject ? "active" : "")}>
+                    <div className="nav__container">
+                        <h1 className="logo"><a href="/#">My Website</a></h1>
+                        <ul>
+                            <li><a href="/25StickyNavigation" className="current">Home</a></li>
+                            <li><a href="/25StickyNavigation">About</a></li>
+                            <li><a href="/25StickyNavigation">Services</a></li>
+                            <li><a href="/25StickyNavigation">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
 
             <div className="hero">
                 <h1>Welcome To My Website</h1>
@@ -59,7 +60,7 @@ const StickyNavigation: FC = () => {
                 <h3>Content Two</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur provident nostrum possimus inventore nisi laboriosam consequatur modi nulla eos, commodi, omnis distinctio! Maxime distinctio impedit provident, voluptates illo odio nostrum minima beatae similique a sint sapiente voluptatum atque optio illum est! Tenetur tempora doloremque quae iste aperiam hic cumque repellat?</p>
             </section>
-        </div>
+        </main>
     )
 }
 

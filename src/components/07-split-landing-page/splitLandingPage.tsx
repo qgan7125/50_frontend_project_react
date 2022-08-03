@@ -20,7 +20,7 @@ const SplitLandingPage:FC = () => {
     }
 
     return (
-        <div className='splitLanding__container'>
+        <main className='splitLanding__container'>
             <div
                 id='ps5'
                 className={isActive("ps5")}
@@ -37,7 +37,7 @@ const SplitLandingPage:FC = () => {
                 <h2>XBox Series X</h2>
                 <button>BUY NOW</button>
             </div>
-        </div>
+        </main>
     )
 }
 

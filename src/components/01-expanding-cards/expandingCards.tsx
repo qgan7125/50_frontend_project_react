@@ -10,7 +10,7 @@ const ExpandingCards: FC = () => {
   };
 
   return (
-    <div className="expandingCards__container">
+    <main className="expandingCards__container">
       {data.data.map((img) => (
         <div
           className={
@@ -24,7 +24,7 @@ const ExpandingCards: FC = () => {
           <h3>{img.label}</h3>
         </div>
       ))}
-    </div>
+    </main>
   );
 };
 

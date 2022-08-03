@@ -23,7 +23,7 @@ const AutoTextEffect: FC = () => {
     }, [speed])
 
     return (
-        <div className='autoTextEffect__container'>
+        <main className='autoTextEffect__container'>
             <h1>{text || "Staring..."}</h1>
             <label >
                 Speed:
@@ -34,7 +34,7 @@ const AutoTextEffect: FC = () => {
                     value={speed}
                     onChange={handleSpeed} />
             </label>
-        </div>
+        </main>
     )
 }
 

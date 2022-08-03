@@ -30,7 +30,7 @@ const NotesApp: FC = () => {
         const newNotes = [...notes.slice(0, deletNote), ...notes.slice(deletNote + 1)]
         setNotes(newNotes);
         localStorage.setItem("notes", JSON.stringify(newNotes));
-        if(newNotes.length === 0) {
+        if (newNotes.length === 0) {
             localStorage.removeItem("notes");
         }
     }
@@ -43,12 +43,12 @@ const NotesApp: FC = () => {
     }
 
     return (
-        <div className='noteApp__container'>
+        <main className='noteApp__container'>
             <button className='btn__add' onClick={handleAddNotes}>Add notes</button>
             {notes.map(note => (
                 <Note key={note.id} {...note} deleteFn={handleDelete} changeFn={handleContent} />
             ))}
-        </div>
+        </main>
     )
 }
 

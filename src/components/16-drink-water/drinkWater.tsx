@@ -10,7 +10,7 @@ const DrinkWater:FC = () => {
     }
 
     return (
-        <div className='drinkWater__container'>
+        <main className='drinkWater__container'>
             <h1>Drink Water</h1>
             <h4>Goal: 2 Liters</h4>
             <div className='bottle large'>
@@ -21,7 +21,7 @@ const DrinkWater:FC = () => {
                 <div className='percentage' style={{height:  bottles.filter(b => b).length / bottles.length * 100+ "%"}}><strong>{bottles.filter(b => b).length / bottles.length * 100}%</strong></div>
             </div>
             <h4>Select how many glasses of water that you have drank</h4>
-            <div className='bottles'>
+            <section className='bottles'>
                 {bottles.map((bottle, i) => (
                     <button
                         id={i + ""}
@@ -29,8 +29,8 @@ const DrinkWater:FC = () => {
                         className={'bottle small ' + (bottle ? 'active' : "")}
                         onClick={handleClick}>250 <br /> ml</button>
                 ))}
-            </div>
-        </div >
+            </section>
+        </main >
     )
 }
 

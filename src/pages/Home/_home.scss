@@ -6,7 +6,7 @@ a {
     color: inherit;
 }
 
-header {
+.Home__title {
     @include mixin.FlexCenter;
     flex-direction: column;
     padding: 15% 5%;

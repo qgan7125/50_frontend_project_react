@@ -41,12 +41,12 @@ const ButtonRippleEffect: FC = () => {
     }, [position]);
 
     return (
-        <div className='buttonRippleEfect__container'>
+        <main className='buttonRippleEfect__container'>
             <button onClick={handleClick}>
                 Click me
                 {ripples}
             </button>
-        </div>
+        </main>
     )
 }
 

@@ -39,7 +39,7 @@ const DragNdrap:FC = () => {
     }
 
     return (
-        <div className='dragNdrop__container'>
+        <main className='dragNdrop__container'>
             {Array.from(Array(BOX_NUMBER).keys()).map(box => (
                 <div
                     id={box.toString()}
@@ -57,7 +57,7 @@ const DragNdrap:FC = () => {
                     </div>
                 </div>
             ))}
-        </div>
+        </main>
     )
 }
 

@@ -43,27 +43,27 @@ const DoubleVerticalSlider:FC = () => {
     }
 
     return (
-        <div className='doubleVerticalSlider__container'>
-            <div className='left--slider' style={{ transform: `translateY(-${((DATA.length - 1) - slider) * 100}vh)` }}>
+        <main className='doubleVerticalSlider__container'>
+            <section className='left--slider' style={{ transform: `translateY(-${((DATA.length - 1) - slider) * 100}vh)` }}>
                 {DATA.map(d => (
                     <div key={d.title} style={{ backgroundColor: d.color }}>
                         <h1>{d.title}</h1>
                         <p>{d.excerpt}</p>
                     </div>
                 ))}
-            </div>
-            <div className='right--slider' style={{ transform: `translateY(${-slider * 100}vh)` }}>
+            </section>
+            <section className='right--slider' style={{ transform: `translateY(${-slider * 100}vh)` }}>
                 {DATA.map(d => (
                     <div key={d.title + 'img'} style={{ backgroundImage: `url(${d.img})` }}></div>
                 ))}
-            </div>
+            </section>
             <button className='Down' onClick={handleDown}>
                 <i className="fas fa-arrow-down"></i>
             </button>
             <button className='Up' onClick={handleUp}>
                 <i className="fas fa-arrow-up"></i>
             </button>
-        </div>
+        </main>
     )
 }
 

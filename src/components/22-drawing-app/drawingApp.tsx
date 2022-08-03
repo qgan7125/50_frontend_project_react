@@ -95,7 +95,7 @@ const DrawingApp: FC = () => {
     }
 
     return (
-        <div className='drawingApp__container' onMouseUp={handleMouseUp}>
+        <main className='drawingApp__container' onMouseUp={handleMouseUp}>
             <div className='drawingApp__canvas--container'>
                 <canvas
                     ref={canvasRef}
@@ -111,7 +111,7 @@ const DrawingApp: FC = () => {
                     <button onClick={clearCanvas}>&times;</button>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 

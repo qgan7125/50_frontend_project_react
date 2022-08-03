@@ -31,7 +31,7 @@ const GoodCheapFast: FC = () => {
     }
 
     return (
-        <div className='goodCheapFast__container'>
+        <main className='goodCheapFast__container'>
             <h2>How do you want your project to be?</h2>
             {
                 Object.keys(checkBoxs).map(checkbox => (
@@ -49,7 +49,7 @@ const GoodCheapFast: FC = () => {
                 ))
             }
 
-        </div>
+        </main>
     )
 }
 

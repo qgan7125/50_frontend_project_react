@@ -20,7 +20,7 @@ const EventkeyCode:FC = () => {
     }, [])
 
     return (
-        <div className='eventKeycode__container'>
+        <main className='eventKeycode__container'>
             {
                 pressed ?
                     <div className='eventKeycode__event'>
@@ -42,7 +42,7 @@ const EventkeyCode:FC = () => {
                         Press any key to get keyCode
                     </div>
             }
-        </div>
+        </main>
     )
 }
 

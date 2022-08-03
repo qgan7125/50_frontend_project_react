@@ -9,7 +9,7 @@ const AnimatedNavigation:FC = () => {
     }
 
     return (
-        <div className='animatedNavigation__container'>
+        <main className='animatedNavigation__container'>
             <div className={'animatedNavigation__nav ' + ( expanded ? "active" : "")}>
                 <ul>
                     {navBar.map(bar => (
@@ -22,7 +22,7 @@ const AnimatedNavigation:FC = () => {
                     <div className='line line2'></div>
                 </button>
             </div>
-        </div>)
+        </main>)
 }
 
 export default AnimatedNavigation;

@@ -50,7 +50,7 @@ const ThemeClock: FC = () => {
     }, [])
 
     return (
-        <div className={'themeClock__container ' + (theme ? 'dark' : "")}>
+        <main className={'themeClock__container ' + (theme ? 'dark' : "")}>
             <button onClick={handleTheme}>{theme ? 'Light' : 'Dark'} mode</button>
             <div className='clock'>
                 <div className='needle hour' style={{ transform: `translate(-50%, -100%) rotate(${scale(time.hour, 0, 12, 0, 360)}deg)` }}></div>
@@ -66,7 +66,7 @@ const ThemeClock: FC = () => {
                 {`${days[time.day]}, ${months[time.month]}`}
                 <div className='circle'>{time.date}</div>
             </div>
-        </div>
+        </main>
     )
 }
 

@@ -17,10 +17,10 @@ const ToastNotification: FC = () => {
         }, 3000)
     }
     return (
-        <div className='toastNotification__container'>
+        <main className='toastNotification__container'>
             <button className='btn' onClick={handleClick}>Show notification</button>
             <div id='toasts'>{message}</div>
-        </div>
+        </main>
     )
 }
 

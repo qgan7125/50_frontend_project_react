@@ -12,8 +12,8 @@ const HoverBoard: FC = () => {
     }
 
     return (
-        <div className="hoverBoard__container">
-            <div className="board">
+        <main className="hoverBoard__container">
+            <section className="board">
                 {
                     Array.from(Array(SQUARES).keys()).map(i => (
                         <div
@@ -23,8 +23,8 @@ const HoverBoard: FC = () => {
                             onMouseOut={handleMoveOut} />
                     ))
                 }
-            </div>
-        </div>
+            </section>
+        </main>
     )
 }
 

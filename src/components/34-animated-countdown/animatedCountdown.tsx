@@ -57,18 +57,18 @@ const AnimatedCountdown: FC = () => {
     }, [replay]);
 
     return (
-        <div className='animatedCountdown__container'>
-            <div className="counter hide" ref={counterRef}>
+        <main className='animatedCountdown__container'>
+            <section className="counter hide" ref={counterRef}>
                 <div className='num'>
                     {numArr}
                 </div>
                 <h4>Get ready</h4>
-            </div>
-            <div className='final show' ref={replayRef}>
+            </section>
+            <section className='final show' ref={replayRef}>
                 <h1>Go</h1>
                 <button onClick={handleReplay}>Replay</button>
-            </div>
-        </div>
+            </section>
+        </main>
     )
 }
 

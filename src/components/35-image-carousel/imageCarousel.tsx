@@ -54,8 +54,8 @@ const ImageCarousel: FC = () => {
     }, [idx]);
 
     return (
-        <div className='imageCarousel__container'>
-            <div className='carousel'>
+        <main className='imageCarousel__container'>
+            <section className='carousel'>
                 <div className="image-container" ref={imgContainerlRef}>
                     {IMAGES.map(img => (
                         <img key={img.alt} src={img.src} alt={img.alt} />
@@ -65,9 +65,9 @@ const ImageCarousel: FC = () => {
                     <button id="left" className="imageCarousel__btn" onClick={handlePrev}>Prev</button>
                     <button id="right" className="imageCarousel__btn" onClick={handleNext}>Next</button>
                 </div>
-            </div>
+            </section>
 
-        </div>
+        </main>
     )
 }
 

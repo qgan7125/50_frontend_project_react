@@ -13,7 +13,7 @@ const FormWave: FC = () => {
     }
 
     return (
-        <div className='formWave__container'>
+        <main className='formWave__container'>
             <form className='formWave__content'>
                 <h1>Please login</h1>
                 <div className='row'>
@@ -42,7 +42,7 @@ const FormWave: FC = () => {
                 <button>Login</button>
                 <div>Don't have an account? <a href='/#'>Register</a></div>
             </form>
-        </div>
+        </main>
     )
 }
 

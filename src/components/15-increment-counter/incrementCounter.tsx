@@ -28,7 +28,7 @@ const IncrementCounter:FC = () => {
     }, [])
 
     return (
-        <div className='incrementCounter__container'>
+        <main className='incrementCounter__container'>
             <div className="incrementCounter__content">
                 <i className="fab fa-twitter fa-3x"></i>
                 <div className="counter">{counter["twitter"] || 0}</div>
@@ -46,7 +46,7 @@ const IncrementCounter:FC = () => {
                 <div className="counter">{counter["facebook"] || 0}</div>
                 <span>Facebook Fans</span>
             </div>
-        </div>
+        </main>
     )
 }
 

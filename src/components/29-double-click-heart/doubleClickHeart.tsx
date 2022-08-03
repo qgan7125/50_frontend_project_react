@@ -47,13 +47,13 @@ const DoubleClickHeart:FC = () => {
     }, [position])
     
     return (
-        <div className='doubleClickHeart__container'>
+        <main className='doubleClickHeart__container'>
             <h1>Double click on the image to <i className="fas fa-heart"></i> it</h1>
             <h3>You like it {count} times</h3>
             <div className="loveMe" onClick={handleClick}>
                 {rippleArr}
             </div>
-        </div>
+        </main>
     )
 }
 

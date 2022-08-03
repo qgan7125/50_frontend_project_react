@@ -12,7 +12,7 @@ const ProgressStep:FC = () => {
     const isActive: (id: number) => string  = (id: number) => "step " + (step >= id ? "active" : "");
 
     return (
-        <div className='pregressStep__container'>
+        <main className='pregressStep__container'>
             <div className='pregressStep__container--progress'>
                 <div className='pregressStep__Pregress'> </div>
                 <div className='pregressStep__Pregress-fill' style={{ width: (step - 1) * 33 + "%" }}> </div>
@@ -31,7 +31,7 @@ const ProgressStep:FC = () => {
                     onClick={() => handleClick(1)}
                     disabled={nextDisable}>Next</button>
             </div>
-        </div>
+        </main>
     )
 }
 

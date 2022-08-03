@@ -1,4 +1,4 @@
-import {  FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 
 const DATA = {
     image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80',
@@ -18,7 +18,7 @@ interface Data {
     date?: string
 }
 
-const ContentPlaceholder:FC = () => {
+const ContentPlaceholder: FC = () => {
     const [data, setData] = useState<Data>({});
     const [loading, setLoading] = useState(true);
 
@@ -28,9 +28,9 @@ const ContentPlaceholder:FC = () => {
             setLoading(false);
         }, 2500)
     }, []);
-    
+
     return (
-        <div className='contentPlaceholder__container'>
+        <main className='contentPlaceholder__container'>
             <div className='contentPlaceholder__card'>
                 <div className={'card__header' + (loading ? ' animated-bg' : "")}>
                     {data.image && <img src={data.image} alt="" />}
@@ -70,7 +70,7 @@ const ContentPlaceholder:FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 

@@ -36,13 +36,13 @@ const SoundBoard:FC = () => {
     }
 
     return (
-        <div className='soundBoard__container'>
+        <main className='soundBoard__container'>
             <div className='soundBoard__content'>
                 {Object.keys(audios).map(sound => (
                     <button id={sound} key={sound} onClick={handleClick}>{sound}</button>
                 ))}
             </div>
-        </div>
+        </main>
     )
 }
 

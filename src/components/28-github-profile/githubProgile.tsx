@@ -88,14 +88,14 @@ const GithubProfile: FC = () => {
     const HasValue = profile.reposList && profile.reposList.length > 5;
 
     return (
-        <div className='githubProfile__container'>
+        <main className='githubProfile__container'>
             <form onSubmit={handleSubmit}>
                 <input
                     onChange={handleInput}
                     value={input}
                     placeholder='Search to a Github user' />
             </form>
-            <main>
+            <section>
                 {Object.keys(profile).length > 0 && <div className='githubProfile__content'>
                     <img src={profile.avatar} alt='avatar' />
                     <div className='profile__info'>
@@ -114,9 +114,9 @@ const GithubProfile: FC = () => {
                         {HasValue && <button className='btn' onClick={handleExpanded}>{expanded ? "Expanded Less" : "Expanded More"}</button>}
                     </div>
                 </div>}
-                {error && <div className='githubProfile__error'>No profile with this username</div>}
-            </main>
-        </div>
+                {error && <section className='githubProfile__error'>No profile with this username</section>}
+            </section>
+        </main>
     )
 }
 

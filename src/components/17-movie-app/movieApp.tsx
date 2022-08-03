@@ -6,9 +6,9 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c
 
 
 interface IContent {
-    title: string, 
-    overview: string, 
-    poster_path: string, 
+    title: string,
+    overview: string,
+    poster_path: string,
     vote_average: number
 }
 
@@ -48,16 +48,18 @@ const MovieApp: FC = () => {
     }, [])
 
     return (
-        <div className='movieApp__container'>
-            <form className='nav' onSubmit={handleSubmit}>
-                <input onChange={handleSearch} placeholder='Search' value={search} />
-            </form>
-            <main className='movieApp__contents'>
+        <main className='movieApp__container'>
+            <header>
+                <form className='nav' onSubmit={handleSubmit}>
+                    <input onChange={handleSearch} placeholder='Search' value={search} />
+                </form>
+            </header>
+            <section className='movieApp__contents'>
                 {contents.map(content => (
                     <MovieItem key={content.title + Math.random()} {...content} />
                 ))}
-            </main>
-        </div>
+            </section>
+        </main>
     )
 }
 

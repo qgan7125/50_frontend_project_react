@@ -32,7 +32,7 @@ const ScrollAnimation: FC = () => {
     }, [])
 
     return (
-        <div className='scroll__container'>
+        <main className='scroll__container'>
             <h1>Scroll to see the animation</h1>
             {Array.from(Array(CONTENT_NUMBER).keys()).map(i => (
                 <div
@@ -42,7 +42,7 @@ const ScrollAnimation: FC = () => {
                     <h2>Content</h2>
                 </div>
             ))}
-        </div>
+        </main>
     )
 }
 

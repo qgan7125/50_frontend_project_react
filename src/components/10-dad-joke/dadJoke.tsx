@@ -21,13 +21,13 @@ const DadJoke: FC = () => {
         fetchJoke();
     }
     return (
-        <div className='dadJoke__container'>
+        <main className='dadJoke__container'>
             <div className='dadJoke__content'>
                 <h3>Don't Laugh Challenge</h3>
                 <div className='Joke'>{joke}</div>
                 <button onClick={handleClick}>Get Another Joke</button>
             </div>
-        </div>
+        </main>
     )
 }
 

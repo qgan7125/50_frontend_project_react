@@ -77,7 +77,7 @@ const PasswordGenerator: FC = () => {
     }
 
     return (
-        <div className='passwordGenerator__container'>
+        <main className='passwordGenerator__container'>
             <div className='passwordGenerator__content'>
                 <h2>Password Generator</h2>
                 <div className='result__container'>
@@ -131,7 +131,7 @@ const PasswordGenerator: FC = () => {
                 </label>
                 <button onClick={handleGenerator}>Generate Password</button>
             </div>
-        </div>
+        </main>
     )
 }
 

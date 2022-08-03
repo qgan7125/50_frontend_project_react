@@ -46,7 +46,7 @@ const RandomChoicePicker: FC = () => {
     }
 
     return (
-        <div className='randomChoicePicker__container'>
+        <main className='randomChoicePicker__container'>
             <h3>Enter all of the choices divided by a comman (','). <br />Please enter when you're done</h3>
             <textarea
                 value={inputs}
@@ -58,7 +58,7 @@ const RandomChoicePicker: FC = () => {
                     <div key={choice.val + i} className={'choice ' + (choice.highlight ? 'highlight' : "")}>{choice.val}</div>
                 ))}
             </div>
-        </div>
+        </main>
     );
 }
 
