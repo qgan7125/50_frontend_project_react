@@ -28,42 +28,40 @@ const MovieApp: FC = () => {
         totalItems: 34591
     })
 
+    const url = search.trim().length > 0 ? SEARCH_API + search + `&page=${pages.startIndex}` : API_URL + `&page=${pages.startIndex}`;
+
     const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
-        setSearch(e.target.value)
+        setPages(prev => ({ ...prev, startIndex: 1 }))
+        setSearch(e.target.value);
     }
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
         setPages(prev => ({ ...prev, startIndex: 1 }))
-        fetchData(search.trim() ? SEARCH_API + search : API_URL);
-    }
-
-    const fetchData: (URL: string) => void = async (URL) => {
-        await fetch(URL)
-            .then(res => {
-                if (res.status === 200) {
-                    return res.json();
-                } else {
-                    throw Error(res.status + "");
-                }
-
-            })
-            .then(res => {
-                setPages(prev => ({ ...prev, totalItems: res.total_results }))
-                setcontents(res.results);
-            })
-            .catch(err => {
-                console.log(err);
-            })
     }
 
     useEffect(() => {
-        if (search.trim().length > 0) {
-            fetchData(SEARCH_API + search + `&page=${pages.startIndex}`);
-        } else {
-            fetchData(API_URL + `&page=${pages.startIndex}`);
+        const fetchData: () => void = async () => {
+            await fetch(url)
+                .then(res => {
+                    if (res.status === 200) {
+                        return res.json();
+                    } else {
+                        throw Error(res.status + "");
+                    }
+
+                })
+                .then(res => {
+                    setPages(prev => ({ ...prev, totalItems: res.total_results }))
+                    setcontents(res.results);
+                })
+                .catch(err => {
+                    console.log(err);
+                })
         }
-    }, [pages.startIndex])
+        fetchData();
+        window.scrollTo({top:0, behavior: "smooth"})
+    }, [url])
 
     const handleclickPage = (page: number) => {
         setPages(rest => ({ ...rest, startIndex: page }));

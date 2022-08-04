@@ -59,6 +59,7 @@ const PokeDev: FC = () => {
 
 
         getAllPokemon();
+        window.scrollTo({top:0, behavior: "smooth"})
         return () => {
             setPokemon([]);
         }
