@@ -1,0 +1,27 @@
+@use "../../scss/mixin";
+@use "./pokemon/pokemon";
+
+.pokeDev__container {
+    width: 100vw;
+    min-height: 90vh;
+    background: #efefbb;
+    background: linear-gradient(to right, #d4d3dd, #efefbb);
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        letter-spacing: 3px;
+    }
+
+    .pokemons__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: space-between;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        @include mixin.sameParentWH;
+    }
+}

@@ -215,6 +215,12 @@
             "backgroundImage": "36HoverBoard.png",
             "day": 36,
             "link": "36HoverBoard"
+        },
+        {
+            "name": "Poke dev",
+            "backgroundImage": "37PokeDev.png",
+            "day": 37,
+            "link": "37PokeDev"
         }
     ]
 }

@@ -16,6 +16,9 @@
 // Projects
 @use "./pages/Home/project/project";
 
+// Pagination
+@use "./components/pagination/pagination";
+
 // Components
 @use "./components/01-expanding-cards/expandingCards";
 @use "./components/02-progress-step/progressStep";
@@ -54,6 +57,7 @@
 @use "./components/34-animated-countdown/animatedCountdown";
 @use "./components/35-image-carousel/imageCarousel";
 @use "./components/36-hover-board/hoverBoard";
+@use "./components/37-poke-dev/pokeDev";
 
 
 // Import fa css

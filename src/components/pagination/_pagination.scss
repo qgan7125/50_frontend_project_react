@@ -1,0 +1,28 @@
+@use "../../scss/variables";
+
+.pagination__container {
+    display: flex;
+    gap: 5px;
+    margin: 20px;
+
+    button {
+        border-radius: 20px;
+        border: none;
+        background-color: variables.$color-primary;
+        color: variables.$color-light;
+        padding: 5px 10px;
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &:disabled {
+            pointer-events: none;
+            background-color: rgba($color: variables.$color-dark, $alpha: 0.8);
+        }
+    }
+
+    .currentPage {
+        background-color: rgba($color: variables.$color-primary, $alpha: 0.6);
+    }
+}

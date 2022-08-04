@@ -1,0 +1,59 @@
+@use "../../../scss/variables";
+@use "../../../scss//mixin";
+
+.pokemon__info {
+    @include mixin.FlexCenter;
+    flex-direction: column;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+
+    .img-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info {
+        margin-top: 20px;
+
+        .number {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 0.8em;
+        }
+
+        .name {
+            margin: 15px 0 7px;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .type {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3px;
+
+        div {
+            box-sizing: border-box;
+            color: variables.$color-light;
+            border-radius: 5px;
+            padding: 2px 3px;
+            box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
