@@ -1,3 +1,5 @@
+@use "../../scss/mixin";
+
 :root {
     --primary-color: #22254b;
     --secondary-color: #373b69;
@@ -10,6 +12,10 @@
     background-color: var(--primary-color);
     padding: 0;
     margin: 0;
+
+    .pagination {
+        @include mixin.FlexCenter;
+    }
 }
 
 .movieApp__container .nav {
