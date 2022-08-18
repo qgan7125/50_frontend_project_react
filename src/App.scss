@@ -1,4 +1,6 @@
 
+
+
 @use "./scss/reset";
 @use "./scss/fontfamily";
 @use "./scss/variables";
@@ -58,10 +60,18 @@
 @use "./components/35-image-carousel/imageCarousel";
 @use "./components/36-hover-board/hoverBoard";
 @use "./components/37-poke-dev/pokeDev";
+@use "./components/38-moblie-tab-navigation/mobileTabNavigation";
+@use "./components/39-password-strength-background/passwordStrengh";
+@use "./components/40-boxes-background/boxesBackground";
 
 
 // Import fa css
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+// Import tailwind
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
 
 html,
 body {

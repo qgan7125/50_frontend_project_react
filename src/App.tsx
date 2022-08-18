@@ -46,6 +46,9 @@ import AnimatedCountdown from "./components/34-animated-countdown/animatedCountd
 import ImageCarousel from "./components/35-image-carousel/imageCarousel";
 import HoverBoard from "./components/36-hover-board/hoverBoard";
 import PokeDev from "./components/37-poke-dev/pokeDev";
+import MobileTabNavigation from "./components/38-moblie-tab-navigation";
+import PassordStrengthBackground from "./components/39-password-strength-background";
+import BoxesBackground from "./components/40-boxes-background";
 
 function App() {
   return (
@@ -90,6 +93,9 @@ function App() {
         <Route path="/35ImageCarousel" element={<ImageCarousel />} />
         <Route path="/36HoverBoard" element={<HoverBoard />} />
         <Route path="/37PokeDev" element={<PokeDev />} />
+        <Route path="/38MobileTabNavigation" element={<MobileTabNavigation />} />
+        <Route path="/39PasswordStrengthBackground" element={<PassordStrengthBackground />} />
+        <Route path="/40BoxesBackground" element={<BoxesBackground />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />

@@ -221,6 +221,24 @@
             "backgroundImage": "37PokeDev.png",
             "day": 37,
             "link": "37PokeDev"
+        },
+        {
+            "name": "Mobile Tab Navigation",
+            "backgroundImage": "38MobileTabNavigation.png",
+            "day": 38,
+            "link": "38MobileTabNavigation"
+        },
+        {
+            "name": "Password Strength Background",
+            "backgroundImage": "39PasswordStrengthBackground.png",
+            "day": 39,
+            "link": "39PasswordStrengthBackground"
+        },
+        {
+            "name": "Boxes Background",
+            "backgroundImage": "40BoxesBackground.png",
+            "day": 40,
+            "link": "40BoxesBackground"
         }
     ]
 }
