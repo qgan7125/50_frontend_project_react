@@ -41,3 +41,7 @@
 | 35 | [Image Carousel](./src/components/35-image-carousel/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/35ImageCarousel)
 | 36 | [Hover Board](./src/components/36-hover-board/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/36HoverBoard)
 | 37 | [Poke Dev](./src/components/37-poke-dev/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/37PokeDev)
+| 38 | [Poke Dev](./src/components/38-moblie-tab-navigation/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/38MobileTabNavigation)
+| 39 | [Poke Dev](./src/components/39-password-strength-background/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/39PasswordStrengthBackground)
+| 40 | [Poke Dev](./src/components/40-boxes-background/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/40BoxesBackground)
+| 41 | [Poke Dev](./src/components/41-verify-account-ui/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/41VerifyAccountUI)

@@ -49,6 +49,7 @@ import PokeDev from "./components/37-poke-dev/pokeDev";
 import MobileTabNavigation from "./components/38-moblie-tab-navigation";
 import PassordStrengthBackground from "./components/39-password-strength-background";
 import BoxesBackground from "./components/40-boxes-background";
+import VerifyAccountUI from "./components/41-verify-account-ui";
 
 function App() {
   return (
@@ -96,6 +97,7 @@ function App() {
         <Route path="/38MobileTabNavigation" element={<MobileTabNavigation />} />
         <Route path="/39PasswordStrengthBackground" element={<PassordStrengthBackground />} />
         <Route path="/40BoxesBackground" element={<BoxesBackground />} />
+        <Route path="/41VerifyAccountUI" element={<VerifyAccountUI />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />

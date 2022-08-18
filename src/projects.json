@@ -239,6 +239,12 @@
             "backgroundImage": "40BoxesBackground.png",
             "day": 40,
             "link": "40BoxesBackground"
+        },
+        {
+            "name": "Verify Account UI",
+            "backgroundImage": "41VerifyAccountUI.png",
+            "day": 41,
+            "link": "41VerifyAccountUI"
         }
     ]
 }
