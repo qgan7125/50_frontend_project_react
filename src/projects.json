@@ -269,6 +269,12 @@
             "backgroundImage": "45NetflixMobileNavigation.png",
             "day": 45,
             "link": "45NetflixMobileNavigation"
+        },
+        {
+            "name": "Quiz App",
+            "backgroundImage": "46QuizApp.png",
+            "day": 46,
+            "link": "46QuizApp"
         }
     ]
 }

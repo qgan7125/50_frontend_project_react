@@ -54,6 +54,7 @@ import LiveUserFilter from "./components/42-live-user-filter";
 import FacebookUIDesign from "./components/43-facebook-ui-design";
 import CustomRangeSlider from "./components/44-custom-range-slider";
 import NetflixMobileNavigation from "./components/45-netflix-mobile-navigation";
+import QuizApp from "./components/46-quiz-app";
 
 function App() {
   return (
@@ -106,6 +107,7 @@ function App() {
         <Route path="/43FacebookUIDesign" element={<FacebookUIDesign />} />
         <Route path="/44CustomRangeSlider" element={<CustomRangeSlider />} />
         <Route path="/45NetflixMobileNavigation" element={<NetflixMobileNavigation />} />
+        <Route path="/46QuizApp" element={<QuizApp />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />
