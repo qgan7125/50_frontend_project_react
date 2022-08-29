@@ -1,0 +1,60 @@
+@use "../../scss/mixin";
+@use "../../scss/variables";
+
+.liveUser__container {
+    min-height: 90vh;
+    @include mixin.FlexCenter;
+    font-family: 'Roboto', sans-serif;
+}
+
+.liveUser__content {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: #3e57db;
+        color: #fff;
+        padding: 30px 20px;
+
+        h3 {
+            font-weight: bold;
+        }
+
+        input {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 0;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 14px;
+            padding: 10px 15px;
+            width: 100%;
+            margin-top: 20px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.user-list {
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+
+    li {
+        display: flex;
+        padding: 20px;
+    }
+
+    li:not(:last-of-type) {
+        border-bottom: 1px solid #eee;
+    }
+}

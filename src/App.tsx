@@ -50,6 +50,7 @@ import MobileTabNavigation from "./components/38-moblie-tab-navigation";
 import PassordStrengthBackground from "./components/39-password-strength-background";
 import BoxesBackground from "./components/40-boxes-background";
 import VerifyAccountUI from "./components/41-verify-account-ui";
+import LiveUserFilter from "./components/42-live-user-filter";
 
 function App() {
   return (
@@ -98,6 +99,7 @@ function App() {
         <Route path="/39PasswordStrengthBackground" element={<PassordStrengthBackground />} />
         <Route path="/40BoxesBackground" element={<BoxesBackground />} />
         <Route path="/41VerifyAccountUI" element={<VerifyAccountUI />} />
+        <Route path="/42LiveUserFilter" element={<LiveUserFilter />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />

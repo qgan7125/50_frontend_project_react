@@ -245,6 +245,12 @@
             "backgroundImage": "41VerifyAccountUI.png",
             "day": 41,
             "link": "41VerifyAccountUI"
+        },
+        {
+            "name": "Live User Filter",
+            "backgroundImage": "42LiveUserFilter.png",
+            "day": 42,
+            "link": "42LiveUserFilter"
         }
     ]
 }
