@@ -263,6 +263,12 @@
             "backgroundImage": "44CustomRangeSlider.png",
             "day": 44,
             "link": "44CustomRangeSlider"
+        },
+        {
+            "name": "Netflix Mobile Navigation",
+            "backgroundImage": "45NetflixMobileNavigation.png",
+            "day": 45,
+            "link": "45NetflixMobileNavigation"
         }
     ]
 }
