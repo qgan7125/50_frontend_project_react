@@ -47,3 +47,4 @@
 | 41 | [Verify Account UI](./src/components/41-verify-account-ui/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/41VerifyAccountUI)
 | 42 | [Live User Filter](./src/components/42-live-user-filter/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/42LiveUserFilter)
 | 43 | [Facebook UI Design](./src/components/43-facebook-ui-design/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/43FacebookUIDesign)
+| 44 | [Custom Range Slider](./src/components/44-custom-range-slider/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/44CustomRangeSlider)

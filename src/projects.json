@@ -257,6 +257,12 @@
             "backgroundImage": "43FacebookUIDesign.png",
             "day": 43,
             "link": "43FacebookUIDesign"
+        },
+        {
+            "name": "Custom Range Slider",
+            "backgroundImage": "44CustomRangeSlider.png",
+            "day": 44,
+            "link": "44CustomRangeSlider"
         }
     ]
 }
