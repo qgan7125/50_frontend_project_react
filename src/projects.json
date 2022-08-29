@@ -251,6 +251,12 @@
             "backgroundImage": "42LiveUserFilter.png",
             "day": 42,
             "link": "42LiveUserFilter"
+        },
+        {
+            "name": "Facebook UI Design",
+            "backgroundImage": "43FacebookUIDesign.png",
+            "day": 43,
+            "link": "43FacebookUIDesign"
         }
     ]
 }
