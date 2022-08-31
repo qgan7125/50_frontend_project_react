@@ -1,0 +1,110 @@
+@use "../../scss/mixin";
+
+.catchTheInsect__container {
+    min-height: 85vh;
+    background-color: #516dff;
+    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+
+    .screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        transition: margin 0.5s ease-out;
+        position: relative;
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    .screen.up {
+        margin-top: -100vh;
+    }
+}
+
+.insects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        margin: 10px;
+    }
+}
+
+.choose-insect-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+    flex-direction: column;
+    @include mixin.FlexCenter;
+}
+
+.choose-insect-btn:hover {
+    background-color: #fff;
+    color: #516dff;
+}
+
+.choose-insect-btn:active {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-insect-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.catchTheInsect__time {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.catchTheInsect__score {
+    position: absolute;
+    top: 20px;
+    right: 30px
+}
+
+.catchTheInsect__message {
+    line-height: 1.7;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transform: translateY(-150%);
+    transition: transform 1s ease-in;
+}
+
+.catchTheInsect__message.active {
+    transform: translateY(150%);
+    opacity: 1;
+}
+
+.catchTheInsect__insect {
+    position: absolute;
+}
+
+.catchTheInsect__insect img{
+    width: 100px;
+    height: 100px;
+}

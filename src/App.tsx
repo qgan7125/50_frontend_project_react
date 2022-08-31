@@ -55,6 +55,10 @@ import FacebookUIDesign from "./components/43-facebook-ui-design";
 import CustomRangeSlider from "./components/44-custom-range-slider";
 import NetflixMobileNavigation from "./components/45-netflix-mobile-navigation";
 import QuizApp from "./components/46-quiz-app";
+import TestimonialBoxSwitcher from "./components/47-testimonial-box-switcher";
+import RandomImageGenerator from "./components/48-random-image-generator";
+import TodoList from "./components/49-todo-list";
+import CatchTheInsect from "./components/50-catch-the-insect";
 
 function App() {
   return (
@@ -108,6 +112,10 @@ function App() {
         <Route path="/44CustomRangeSlider" element={<CustomRangeSlider />} />
         <Route path="/45NetflixMobileNavigation" element={<NetflixMobileNavigation />} />
         <Route path="/46QuizApp" element={<QuizApp />} />
+        <Route path="/47TestimonialBoxSwitcher" element={<TestimonialBoxSwitcher />} />
+        <Route path="/48RandomImageGenerator" element={<RandomImageGenerator />} />
+        <Route path="/49TodoList" element={<TodoList />} />
+        <Route path="/50CatchTheInsect" element={<CatchTheInsect />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <GoToTop />

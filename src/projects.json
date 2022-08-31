@@ -275,6 +275,30 @@
             "backgroundImage": "46QuizApp.png",
             "day": 46,
             "link": "46QuizApp"
+        },
+        {
+            "name": "Testimonial Box Switcher",
+            "backgroundImage": "47TestimonialBoxSwitcher.png",
+            "day": 47,
+            "link": "47TestimonialBoxSwitcher"
+        },
+        {
+            "name": "Random Image Generator",
+            "backgroundImage": "48RandomImageGenerator.png",
+            "day": 48,
+            "link": "48RandomImageGenerator"
+        },
+        {
+            "name": "Todo List",
+            "backgroundImage": "49TodoList.png",
+            "day": 49,
+            "link": "49TodoList"
+        },
+        {
+            "name": "Catch the insect",
+            "backgroundImage": "50CatchTheInsect.png",
+            "day": 50,
+            "link": "50CatchTheInsect"
         }
     ]
 }

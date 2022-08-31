@@ -50,3 +50,7 @@
 | 44 | [Custom Range Slider](./src/components/44-custom-range-slider/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/44CustomRangeSlider)
 | 45 | [Netflix Mobile Navigation](./src/components/45-netflix-mobile-navigation/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/45NetflixMobileNavigation)
 | 46 | [Quiz App](./src/components/46-quiz-app/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/46QuizApp)
+| 47 | [Testimonial Box Switcher](./src/components/47-testimonial-box-switcher/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/47TestimonialBoxSwitcher)
+| 48 | [Random Image Generator](./src/components/48-random-image-generator/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/48RandomImageGenerator)
+| 49 | [Todo List](./src/components/49-todo-list/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/49TodoList)
+| 50 | [Catch the insect](./src/components/50-catch-the-insect/)  | [Live Demo](https://qgan7125.github.io/50_frontend_project_react/#/50CatchTheInsect)

@@ -1,0 +1,27 @@
+.randomImageGenerator__container {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+.randomImageGenerator___box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+    img {
+        object-fit: cover;
+        margin: 10px;
+        height: 300px;
+        width: 300px;
+        max-width: 100%;
+    }
+}
